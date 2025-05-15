@@ -1,0 +1,10 @@
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.active {
+  border: 2px solid transparent;
+  box-shadow: 2px 2px 5px cyan;
+  color: cyan;
+  font-weight: 500;
+}
