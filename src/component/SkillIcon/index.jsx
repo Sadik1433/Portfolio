@@ -9,7 +9,7 @@ import { FaPython } from "react-icons/fa";
 
 function SkillIcon() {
   return (
-    <div className="flex flex-col justify-center items-center skills-container ">
+    <div className="relative top-10 flex flex-col justify-center items-center skills-container ">
       <div className="flex flex-row justify-center items-center icon container1   border-2 rounded-2xl">
         <FaJava size={30} />
       </div>

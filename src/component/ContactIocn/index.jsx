@@ -5,11 +5,11 @@ function ContactIcon() {
   return (
     <motion.div
       initial={{ opacity: 20, x: 150 }} //right to left
-      whileInView={{ opacity: 1, x: 1 }}
-      viewport={{ once: false, amount: 0.5 }}
+      whileInView={{ opacity: 1, x: 1, y: 10 }}
+      viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 1.5 }}
     >
-      <div className="h-120 flex flex-col justify-center items-center shadow-lg">
+      <div className="min-w-100  flex flex-col justify-center items-center shadow-lg rounded-2xl  md:min-w-150 h-100">
         <div className="flex flex-row text-xl">
           <div className="w-50 flex flex-col">
             <h6 className="footer-title">Services</h6>

@@ -1,10 +1,32 @@
 body {
+  padding: 0px;
+  margin: 0px;
   overflow: hidden;
   overflow-y: scroll;
 }
+
 .active {
   border: 2px solid transparent;
   box-shadow: 2px 2px 5px cyan;
   color: cyan;
   font-weight: 500;
+}
+
+.mainContainer {
+  background-color: #283039;
+  padding: 15px;
+  margin: 20px;
+  border: 5px groove #283040;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px white;
+}
+.img1 {
+  filter: drop-shadow(0px 0px 5px cyan);
+}
+.name {
+  color: cyan;
+}
+.image-container:hover {
+  filter: drop-shadow(0px 0px 20px cyan);
+  transition: all 1s ease-in;
 }

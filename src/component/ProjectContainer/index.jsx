@@ -46,12 +46,12 @@ const ProjectContainer = () => {
   return (
         <section id="project">
           <div className="mainContainer">
-            <div className="border-b-1 border-blue-50 shadow-m shadow-blue-200 p-20px">
-              <h1 className=" Skill-head text-center text-5xl text-red-500">
+            <div>
+              <h1 className="text-4xl text-center mask-radial-from-stone-50 border-b-2 border-blue-50 shadow-m">
                 Projects
               </h1>
             </div>
-            <ul className="flex flex-wrap justify-center items-center gap-5 p-3">
+            <ul className="grid grid-cols-1 p-3 gap-10 md:grid-cols-3">
               {blogsdata.map((each) => (
                 <Project blog={each} key={each.id} />
               ))}
