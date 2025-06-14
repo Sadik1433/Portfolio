@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import SocialMedia from "../SocialMedia";
 
-function ContactIcon() {
+function ContactService() {
   return (
     <motion.div
-      initial={{ opacity: 20, x: 150 }} //right to left
-      whileInView={{ opacity: 1, x: 1, y: 10 }}
+      initial={{ opacity: 0, x: 10 }} //right to left
+      whileInView={{ opacity: 1, x: 10, y:10}}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 1.5 }}
     >
-      <div className="min-w-100  flex flex-col justify-center items-center shadow-lg rounded-2xl  md:min-w-150 h-100">
+      <div className="min-w-100   flex flex-col justify-center items-center shadow-lg rounded-2xl  md:min-w-100 p-10">
         <div className="flex flex-row text-xl">
           <div className="w-50 flex flex-col">
             <h6 className="footer-title">Services</h6>
@@ -37,4 +37,4 @@ function ContactIcon() {
   );
 }
 
-export default ContactIcon;
+export default ContactService;

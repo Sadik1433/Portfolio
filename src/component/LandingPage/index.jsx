@@ -7,23 +7,25 @@ function LandingPage() {
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        initial={{ opacity:10, y: 0 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity:1, y: 0 }}
+        whileInView={{ opacity: 1, y: -10 }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1.5 }}
       >
         <section id="home">
-          <div className="min-h-screen flex flex-col mainContainer  md:flex-row ">
+          <div className="min-h-screen flex flex-col mainContainer font-serif  md:flex-row ">
             <div className="order-1 flex flex-row justify-center md:order-2 min-w-1/3">
               <Image />
             </div>
             <div className="order-2 text-xl md:order-1 flex flex-col justify-center ">
               <div className="text-white text-center">
                 <div className="text-2xl text-center md:text-4xl">
-                  <h1 className="text-left pl-20 md:text-center">Hi, I am</h1>
-                  <span className="ml-25 text-cyan-500 md:text-center ">
+                  <h1 className="text-left pl-20 md:text-center">Hi, I am   
+                  <br/>
+                  <span className="text-cyan-500 pl-50  font-serif mask-radial-from-stone-50 ">
                     Sadik
                   </span>
+                  </h1>
                 </div>
                 <p className="text-2xl text-center md:text-3xl">
                   I'm a passionate Web Developer with expertise in React, Java,

@@ -9,7 +9,7 @@ function SkillContainer() {
             <h1 className="text-4xl text-center mask-radial-from-stone-50 border-b-2 border-blue-50 shadow-m">
               Skills
             </h1> 
-            <div className="relative  flex flex-col md:top-10" >
+            <div className="flex flex-col md:top-10" >
               <div className="flex flex-col md:flex-row">
                 <div className="">
                   <SkillDescription />

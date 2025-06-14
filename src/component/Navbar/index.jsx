@@ -27,7 +27,7 @@ function Navbar() {
                 to={item}
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-80}
                 duration={500}
                 activeClass="active"
                 className="cursor-pointer btn bg-base-100 shadow-md shadow-red-100 w-20"
