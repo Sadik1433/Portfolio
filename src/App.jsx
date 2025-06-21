@@ -1,3 +1,4 @@
+import './App.css'
 import Navbar from "./component/Navbar/index.jsx";
 import LandingPage from "./component/LandingPage/index.jsx";
 import ProjectContainer from "./component/ProjectContainer/index.jsx";
@@ -9,10 +10,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <div>
+      <div className="app-container">
         <LandingPage />
-        <SkillContainer />
-        <ProjectContainer />
+       <SkillContainer /> 
+         <ProjectContainer />
         <Contact />
         <Footer />
       </div>

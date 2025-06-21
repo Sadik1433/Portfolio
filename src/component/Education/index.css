@@ -1,0 +1,34 @@
+.education{
+    height: 280px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+.edu-head{
+    font-size: 20px;
+    text-align: center;
+    color: #22177a;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.list-degree{
+    list-style-type: none;
+}
+.course-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #22177A;
+}
+.clg-name{
+    font-size: 16px;
+    font-weight: 500;
+    color: #9B7EBD;
+}
+.year{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333446;
+}

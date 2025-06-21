@@ -1,73 +1,53 @@
 import Project from "../Project";
+import "./index.css";
+
 const blogsdata = [
   {
     id: 1,
     projectName: "Tic-Tac-Toe",
     lang: "Html, css, JavaScript",
-    description:'🎮 A fun matching game where players pair similar emojis',
-    desc2: 'Timer, score tracker, increasing difficulty',
-    lang: 'React, Html, css, JavaScript',
-    purpose: 'Practice dynamic rendering and logic',  
-    color: 'white',
-    profileImage:
-      "https://res.cloudinary.com/dnarxeess/image/upload/v1744869701/tic-tac_foabmh.jpg",
-    link: "https://tic-tac1433.netlify.app/",
+    purpose: "Practice DOM manipulation and game logic",
   },
   {
     id: 2,
     projectName: "EmojiGame",
     lang: "Html, css, JavaScript",
-    description:'🎮 A fun matching game where players pair similar emojis',
-    desc2: 'Timer, score tracker, increasing difficulty',
-    lang: 'React, Html, css, JavaScript',
-    purpose: 'Practice dynamic rendering and logic',  
-     color: 'blue',   
-    profileImage:
-      "https://res.cloudinary.com/dnarxeess/image/upload/v1741363538/emoji_at6n3q.jpg",
-    link: "https://emoji1433.ccbp.tech/",
+    purpose: "Learn array manipulation and dynamic rendering",
   },
   {
     id: 3,
     projectName: "Job Search",
     lang: "Html, css, JavaScript",
-    description:'🎮 A fun matching game where players pair similar emojis',
-    desc2: 'Timer, score tracker, increasing difficulty',
-    lang: 'React, Html, css, JavaScript',
-    purpose: 'Practice dynamic rendering and logic', 
-    color: 'blue', 
-    profileImage:
-      "https://res.cloudinary.com/dnarxeess/image/upload/v1741363587/jobby_ng8zz5.jpg",
-    link: "https://job1433.ccbp.tech/login",
+    purpose: "Build a responsive layout mimicking real-world apps",
   },
   {
     id: 4,
     projectName: "Todolist",
     lang: "Html, css, JavaScript",
-    description:'🎮 A fun matching game where players pair similar emojis',
-    desc2: 'Timer, score tracker, increasing difficulty',
-    lang: 'React, Html, css, JavaScript',
-    purpose: 'Practice dynamic rendering and logic',  
-    color: 'blue',
-    profileImage:
-      "https://res.cloudinary.com/dnarxeess/image/upload/v1741363759/todolist_xrpccx.jpg",
-    link: "https://dailytask-123.netlify.app/",
+    purpose: "Understand data persistence and user interaction",
   },
 ];
 
 const ProjectContainer = () => {
   return (
-        <section id="project">
-          <div className="mainContainer h-screen">
-              <h1 className="text-4xl text-center mask-radial-from-stone-50 border-b-2 border-blue-50 shadow-m">
-                Projects
-              </h1>
-            <ul className="grid grid-cols-1  p-3 gap-20 md:grid-cols-3 ">
-              {blogsdata.map((each) => (
-                <Project blog={each} key={each.id} />
-              ))}
-            </ul>
-          </div>
-        </section>
+    <section id="project">
+      <div className="project-container">
+        <h1 className="project-head">Projects</h1>
+        <div className="project-description">
+          <p className="descr-para">
+            A showcase of interactive and responsive web applications built
+            using React, JavaScript, and modern UI practices. These projects
+            reflect my ability to build clean interfaces and dynamic user
+            experiences.
+          </p>
+        </div>
+        <ul className="project-display-container">
+          {blogsdata.map((each) => (
+            <Project blog={each} key={each.id} />
+          ))}
+        </ul>
+      </div>
+    </section>
   );
 };
 

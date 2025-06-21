@@ -2,41 +2,40 @@ import SocialMedia from "../SocialMedia";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import Image from "../Image";
+import './index.css'
 
 function LandingPage() {
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        initial={{ opacity:1, y: 0 }}
-        whileInView={{ opacity: 1, y: -10 }}
+        initial={{ opacity:0, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1.5 }}
       >
         <section id="home">
-          <div className="min-h-screen flex flex-col mainContainer font-serif  md:flex-row ">
-            <div className="order-1 flex flex-row justify-center md:order-2 min-w-1/3">
+          <div className="landing-container">
+            <div className="image-container">
               <Image />
             </div>
-            <div className="order-2 text-xl md:order-1 flex flex-col justify-center ">
-              <div className="text-white text-center">
-                <div className="text-2xl text-center md:text-4xl">
-                  <h1 className="text-left pl-20 md:text-center">Hi, I am   
+            <div className="container-1">
+                <div className="text-container">
+                  <h1 className="name-head">Hi, I am   
                   <br/>
-                  <span className="text-cyan-500 pl-50  font-serif mask-radial-from-stone-50 ">
+                  <span className="name-text">
                     Sadik
                   </span>
                   </h1>
-                </div>
-                <p className="text-2xl text-center md:text-3xl">
+                <p className="para-text">
                   I'm a passionate Web Developer with expertise in React, Java,
                   python. I love building intuitive and efficient solutions that
                   make a difference.
                 </p>
-                <div className="flex flex-col justify-center text-white h-40">
+                <div className="social-icon-container">
                   <SocialMedia />
                 </div>
-                <div>
-                  <button className="btn btn-outline btn-secondary w-52">
+                <div className="btn-container">
+                  <button className="resume-btn">
                     Resume
                   </button>
                 </div>

@@ -1,48 +1,22 @@
-import { IoIosPerson } from "react-icons/io";
-import { MdCall } from "react-icons/md";
-import { MdOutlineMail } from "react-icons/md";
 import { motion } from "framer-motion";
+import "./index.css";
 
 function Form() {
   return (
     <motion.div
-      initial={{ opacity: 20, x: -100 }} //right to left
-      whileInView={{ opacity: 1, x: 1, y: 10 }}
-      viewport={{ once: true, amount: 0.5 }}
+      initial={{ opacity: 0, x: -30 }} //right to left
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: false, amount: 0.5 }}
       transition={{ duration: 1.5 }}
     >
-      <div className="min-w-50 min-h-30 shadow-lg shadow-cyan-500 rounded-2xl md:w-80">
-        <div className="flex flex-col justify-center items-center rounded-xl gap-5 p-5">
-          <h1 className="p-2 text-2xl mask-radial-from-stone-50 border-b-2 border-white pb-3">
-            Get In Touch
-          </h1>
-          <div className="flex flex-wrap gap-2">
-            <IoIosPerson size={40} className="text-teal-300" />
-            <input
-              type="text"
-              placeholder="Name"
-              className="w-50 border-b-2 outline-0 text-teal-300 pr-3 ml-3"
-            />
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <MdCall size={40} className="text-teal-300" />
-            <input
-              type="text"
-              placeholder="123456"
-              className="w-50 border-b-2 outline-0 text-teal-300 pr-3 ml-3"
-            />
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <MdOutlineMail size={40} className="text-teal-300" />
-            <input
-              type="text"
-              placeholder="@gmail.com"
-              className="w-50 border-b-2 outline-0 text-teal-300 pr-3 ml-3"
-            />
-          </div>
-
-          <button className="btn btn-primary btn-soft mt-3">Submit</button>
-        </div>
+      <div className="form-container">
+        <form className="form">
+            <h1 className="contact-header">Contact Me!</h1>         
+            <input type="text" className="input-field" id="email" placeholder="Email"/>
+            <input type="text" className="input-field" id="phone" placeholder="Phone"/>
+            <textarea  rows="6"  className="text-area" placeholder="Type here...."/>
+            <button className="submit-btn">Submit</button>
+        </form>
       </div>
     </motion.div>
   );

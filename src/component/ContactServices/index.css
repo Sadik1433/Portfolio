@@ -1,0 +1,44 @@
+.contact-service-container {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 5px grey;
+  border: 2px solid transparent;
+  border-radius: 30px;
+}
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-head {
+  font-size: 25px;
+  font-weight: 700;
+  color: #134b70;
+}
+.link{
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Playfair Display", serif;
+  color: #6a11cb;
+}
+.social-media-container {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social-head {
+  font-size: 25px;
+  font-weight: 500;
+  color: #134b70;
+  padding-bottom: 20px;
+}

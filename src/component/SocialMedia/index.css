@@ -1,24 +1,27 @@
 
 ul {
     list-style: none;
-    color: whitesmoke;
+    color: #333;
   }
   
-  .example-2 {
+  .social-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 20px;    
   }
-  .example-2 .icon-content {
+  .social-container .icon-content {
     margin: 0 10px;
     position: relative;
   }
   .icons{
-    color: grey;
+    color: #f0f0f0;
     mix-blend-mode: screen;
     background: transparent;
   }
-  .example-2 .icon-content .tooltip {
+  .social-container .icon-content .tooltip {
     position: absolute;
     top: -30px;
     left: 50%;
@@ -30,13 +33,14 @@ ul {
     visibility: hidden;
     font-size: 14px;
     transition: all 0.3s ease;
+    
   }
-  .example-2 .icon-content:hover .tooltip {
-    opacity: 1;
+  .social-container .icon-content:hover .tooltip {
+    opacity: 10;
     visibility: visible;
     top: -50px;
   }
-  .example-2 .icon-content a {
+  .social-container .icon-content a {
     position: relative;
     overflow: hidden;
     display: flex;
@@ -45,23 +49,24 @@ ul {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    color: #4d4d4d;
-    background-color: #283039;
+    color: #333;
+    background-color: #B2C6D5;
+    box-shadow: 0px 0px 3px grey;
     transition: all 0.3s ease-in-out;
   }
-  .example-2 .icon-content a:hover {
+  .social-container .icon-content a:hover {
     box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
   }
-  .example-2 .icon-content a svg {
+  .social-container .icon-content a svg {
     position: relative;
     z-index: 1;
     width: 30px;
     height: 30px;
   }
-  .example-2 .icon-content a:hover {
+  .social-container .icon-content a:hover {
     color: white;
   }
-  .example-2 .icon-content a .filled {
+  .social-container .icon-content a .filled {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -71,21 +76,21 @@ ul {
     background-color: #000;
     transition: all 0.3s ease-in-out;
   }
-  .example-2 .icon-content a:hover .filled {
+  .social-container .icon-content a:hover .filled {
     height: 100%;
   }
   
-  .example-2 .icon-content a[data-social="linkedin"] .filled,
-  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  .social-container .icon-content a[data-social="linkedin"] .filled,
+  .social-container .icon-content a[data-social="linkedin"] ~ .tooltip {
     background-color: #0274b3;
   }
   
-  .example-2 .icon-content a[data-social="github"] .filled,
-  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  .social-container .icon-content a[data-social="github"] .filled,
+  .social-container .icon-content a[data-social="github"] ~ .tooltip {
     background-color: #24262a;
   }
-  .example-2 .icon-content a[data-social="instagram"] .filled,
-  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  .social-container .icon-content a[data-social="instagram"] .filled,
+  .social-container .icon-content a[data-social="instagram"] ~ .tooltip {
     background: linear-gradient(
       45deg,
       #405de6,
@@ -96,8 +101,8 @@ ul {
       #fd1f1f
     );
   }
-  .example-2 .icon-content a[data-social="youtube"] .filled,
-  .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  .social-container .icon-content a[data-social="youtube"] .filled,
+  .social-container .icon-content a[data-social="youtube"] ~ .tooltip {
     background-color: #ff0000;
   }
   
