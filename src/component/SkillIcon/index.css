@@ -33,12 +33,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f3f8ff;
   border: 0px solid transparent;
   border-radius: 10px;
+  gap: 10px;
 }
 .icon-name {
-  color: #0a5eb0;
+   color: #7695FF;
   font-weight: 900;
 }
 .container1 {

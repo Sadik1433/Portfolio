@@ -17,7 +17,6 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-
 }
 
 .card-button {
@@ -25,7 +24,7 @@
   width: 60%;
   border-radius: 1rem;
   border: none;
-  background-color: #008bf8;
+  background-color: #7695ff;
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -37,19 +36,19 @@
 }
 
 .text-body {
-  color: #0A5EB0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   text-align: center;
+  font-family: "Playfair Display", serif;
+  color: #3674B5;
 }
-
 
 .text-title {
   font-size: 1.5em;
   font-weight: bold;
   border-bottom: 1px solid grey;
   text-align: center;
-  color: #7AE2CF;
+  color: #6a11cb;
 }
 
 .card:hover {

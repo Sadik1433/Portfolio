@@ -11,13 +11,13 @@ const blogsdata = [
   {
     id: 2,
     projectName: "EmojiGame",
-    lang: "Html, css, JavaScript",
+    lang: "Html, css, JavaScript, react",
     purpose: "Learn array manipulation and dynamic rendering",
   },
   {
     id: 3,
     projectName: "Job Search",
-    lang: "Html, css, JavaScript",
+    lang: "Html, css, JavaScript, react",
     purpose: "Build a responsive layout mimicking real-world apps",
   },
   {

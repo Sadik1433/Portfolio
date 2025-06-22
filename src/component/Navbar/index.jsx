@@ -5,14 +5,14 @@ const Navbar = () => {
   return (
     <nav className="navbar-container">
       <div>
-        <h1>Sadik</h1>
+        <h1 className="name-logo">Sadik</h1>
       </div>
       <ul className="list-items">
         <Link
           to="home"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-80}
           duration={500}
           activeClass="active"
           className="list-btn"
@@ -24,7 +24,7 @@ const Navbar = () => {
           to="skill"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-80}
           duration={500}
           activeClass="active"
           className="list-btn"
@@ -35,7 +35,7 @@ const Navbar = () => {
           to="project"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-80}
           duration={500}
           activeClass="active"
           className="list-btn"
@@ -47,7 +47,7 @@ const Navbar = () => {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-80}
           duration={500}
           activeClass="active"
           className="list-btn"

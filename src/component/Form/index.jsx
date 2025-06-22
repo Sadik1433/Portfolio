@@ -10,10 +10,10 @@ function Form() {
       transition={{ duration: 1.5 }}
     >
       <div className="form-container">
-        <form className="form">
+        <form className="form" id="form-container">
             <h1 className="contact-header">Contact Me!</h1>         
-            <input type="text" className="input-field" id="email" placeholder="Email"/>
-            <input type="text" className="input-field" id="phone" placeholder="Phone"/>
+            <input type="text" className="input-field"  name="lastName" id="email" placeholder="Email"/>
+            <input type="text" className="input-field"  name="lastName" id="phone" placeholder="Phone"/>
             <textarea  rows="6"  className="text-area" placeholder="Type here...."/>
             <button className="submit-btn">Submit</button>
         </form>

@@ -6,21 +6,21 @@ import "./index.css";
 const educationData = [
   {
     id: 1,
-    degree: "B.Sc. Computer Science",
+    degree: "B.com Computers",
     institution: "XYZ University, Chennai",
-    year: "2019 - 2022",
+    year: "2021 - 2023",
   },
   {
     id: 2,
-    degree: "Higher Secondary (HSC)",
+    degree: "Higher Secondary (HSC)"  ,
     institution: "ABC Matriculation School",
-    year: "2017 - 2019",
+    year: "2019 - 2021",
   },
   {
     id: 3,
     degree: "Secondary School (SSLC)",
     institution: "ABC Matriculation School",
-    year: "2015 - 2017",
+    year: "2017 - 2018",
   },
 ];
 

@@ -8,19 +8,19 @@
 }
 .about-head{
     font-size: 30px;
-    font-weight: 900;
-    font-family: 'Courier New', Courier, monospace;
-    color: #0A5EB0;
+    font-weight: 500; 
+    font-family: sans-serif;
+    color: #6256CA;
     padding-bottom: 10px;
 }
 .desc-para{
     width: 600px;
     font-size: 18px;    
     font-weight: 300;
-    color: #4E6688;
+     color: #7695FF;
     line-height: 2;
     font-family: sans-serif;
 }
 strong{
-    color: #261FB3;
+    color: #6256CA;
 }

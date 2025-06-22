@@ -9,7 +9,7 @@
 .project-head {
   font-size: 30px;
   text-align: center;
-  color: #180161;
+   color: #6256CA;
   font-weight: 700;
   padding-bottom: 10px;
   border-bottom: 1px groove grey;
@@ -27,7 +27,7 @@
   font-weight: 400;
   text-indent: 5em;
   font-family: "Playfair Display", serif;
-  color: #6a11cb;
+   color: #7695FF;
 }
 .project-display-container {
   padding: 20px;

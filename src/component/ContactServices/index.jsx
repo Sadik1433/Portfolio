@@ -1,6 +1,6 @@
+import './index.css'
 import { motion } from "framer-motion";
 import SocialMedia from "../SocialMedia";
-import './index.css'
 
 function ContactService() {
   return (
