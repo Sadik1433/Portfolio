@@ -5,7 +5,6 @@
   border-radius: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   margin: 10px 20px;
   padding: 20px;
@@ -70,10 +69,34 @@
   padding: 8px 30px;
   border: 0px solid transparent;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .resume-btn:hover {
   background-color:#7695FF;
   color: whitesmoke;
   transition: 0.5s all ease-out;
+}
+
+@media (max-width: 768px) {
+  .landing-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .image-container{
+    order: 0;
+    height: 300px;
+    width: auto;
+  }
+  .container-1 {
+    height: 200px;
+    width: min-content;
+  }
+  .name-head{
+    margin-left: 33px;
+    text-align: left;
+  }
+  .name-text{
+    text-align: center;
+  }
 }

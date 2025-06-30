@@ -1,19 +1,29 @@
 import "./index.css";
+import { useState } from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+   const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <nav className="navbar-container">
       <div>
-        <h1 className="name-logo">Sadik</h1>
+        <h1 className="logo">Sadik</h1>
       </div>
-      <ul className="list-items">
+      <div className="menu-icon" onClick={toggleMenu}>
+        ☰
+      </div>
+      <ul className={`nav-links ${isOpen ? "active" : ""}`}>
+
         <Link
           to="home"
           spy={true}
           smooth={true}
           offset={-80}
-          duration={500}
+          duration={800}
           activeClass="active"
           className="list-btn"
         >
@@ -25,7 +35,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={-80}
-          duration={500}
+          duration={800}
           activeClass="active"
           className="list-btn"
         >
@@ -36,7 +46,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={-80}
-          duration={500}
+          duration={800}
           activeClass="active"
           className="list-btn"
         >
@@ -48,7 +58,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={-80}
-          duration={500}
+          duration={800}
           activeClass="active"
           className="list-btn"
         >

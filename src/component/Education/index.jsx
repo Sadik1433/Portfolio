@@ -6,7 +6,7 @@ import "./index.css";
 const educationData = [
   {
     id: 1,
-    degree: "B.com Computers",
+    degree: "B.com Computers App.." ,
     institution: "XYZ University, Chennai",
     year: "2021 - 2023",
   },
@@ -29,7 +29,7 @@ const Education = () => {
       <AnimatePresence>
       <motion.div
         initial={{ opacity: 0, x: 10 }}
-        whileInView={{ opacity: 1, x: -10 }}
+        whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.5 }}
         transition={{ duration: 1 }}
       >

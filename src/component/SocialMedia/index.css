@@ -51,7 +51,6 @@ ul {
     border-radius: 50%;
     color: #333;
     background-color: #B2C6D5;
-    box-shadow: 0px 0px 3px grey;
     transition: all 0.3s ease-in-out;
   }
   .social-container .icon-content a:hover {

@@ -12,7 +12,9 @@ function SkillContainer() {
           <SkillDescription />
           <Education />
         </div>
-        <SkillIcon />
+        <div className="icon-skill-container">
+          <SkillIcon />
+        </div>
       </div>
     </section>
   );

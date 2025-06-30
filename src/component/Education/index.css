@@ -1,35 +1,59 @@
-.education{
-    height: 280px;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid transparent;
-    border-radius: 20px;
+.education {
+  height: 280px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 20px;
 }
-.edu-head{
+.edu-head {
+  font-size: 20px;
+  text-align: center;
+  color: #6256ca;
+  font-weight: 500;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  text-decoration: 2px solid underline;
+  text-underline-offset: 8px;
+}
+.list-degree {
+  list-style-type: none;
+}
+.course-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4379f2;
+}
+.clg-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6256ca;
+}
+.year {
+  font-size: 12px;
+  font-weight: 400;
+  color: #ff8a8a;
+}
+
+@media (max-width: 768px) {
+  .education {
+    height: 300px;
+  }
+  .edu-head {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .course-name {
     font-size: 20px;
-    text-align: center;
-     color: #6256CA;
-    font-weight: 500;
-    font-family: sans-serif;
-    padding-bottom: 10px;
-}
-.list-degree{
-    list-style-type: none;
-}
-.course-name{
+    font-weight: 900;
+  }
+  .clg-name {
     font-size: 18px;
     font-weight: 700;
-    color: #4379F2;
-}
-.clg-name{
-    font-size: 16px;
+  }
+  .year {
+    font-size: 15px;
     font-weight: 500;
-     color: #6256CA;
-}
-.year{
-    font-size: 12px;
-    font-weight: 400;
-    color: #FF8A8A;
+  }
 }

@@ -1,9 +1,18 @@
-.image{
-    align-items:center ;
-    width: 400px;
-    padding: 10px;
+.image {
+  align-items: center;
+  width: 400px;
+  padding: 10px;
 }
-.profile-image{
-    height: 350px;
+.profile-image {
+  height: 350px;
 }
 
+@media (max-width: 768px) {
+  .image {
+    height: 300px;
+    width: 300px;
+  }
+  .profile-image {
+    height: 250px;
+  }
+}

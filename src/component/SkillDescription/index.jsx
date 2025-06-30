@@ -6,7 +6,7 @@ function SkillDescription() {
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ opacity: -0, x: -10 }}
+        initial={{ opacity: -0, x: 0 }}
         whileInView={{ opacity: 1, x: 10 }}
         viewport={{ once: false, amount: 0.5 }}
         transition={{ duration: 1 }}
