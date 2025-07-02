@@ -1,5 +1,5 @@
 .skills-container {
-  height: 180px;
+  height: 100px;
   padding: 10px 0px;
   margin-inline: auto;
   justify-content: flex-start;
@@ -22,11 +22,11 @@
 
 .icon {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
+  width: 60px;
+  max-width: 100%;
+  padding: 2px;
   left: 100%;
-  color: #5EE6EB;
+  color: #007bff;
   animation: scrolLeft 30s linear infinite;
   text-align: center;
   display: flex;
@@ -38,7 +38,7 @@
   gap: 10px;
 }
 .icon-name {
-   color: #7695FF;
+  color: #7695ff;
   font-weight: 900;
 }
 .container1 {
@@ -66,4 +66,11 @@
 
 .container7 {
   animation-delay: calc(30s / 7 * (7 - 7) * -1);
+}
+
+@media (max-width: 768px) {
+  .icon {
+    width: 40px;
+    max-width: 100%;
+  }
 }

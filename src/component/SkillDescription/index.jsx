@@ -19,9 +19,9 @@ function SkillDescription() {
             Hello! I'm a passionate and enthusiastic
             <strong> Web Developer </strong> with a strong foundation in  
             <strong>
-                  HTML, CSS, JavaScript, Python,Java,Sql,MangoDB, React.
+                  HTML, CSS, JavaScript, Python, Java, Sql, MangoDB, React.  
             </strong>
-            Even though I’m at the beginning of my professional journey, I’ve
+              Even though I’m at the beginning of my professional journey, I’ve
             already built several personal projects that reflect my love for
             clean, functional, and user-centered solutions.
           </p>

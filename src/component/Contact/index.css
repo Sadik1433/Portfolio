@@ -1,34 +1,40 @@
 .contact-container {
-  height: 87vh;
-  margin: 20px 20px;
-  border: 5px solid transparent;
-  border-radius: 30px;
-  padding-bottom: 20px;
-  box-shadow: 0px 0px 10px #22177a;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
+
 .contact-head {
+  font-size: 2rem;
+  font-weight: 700;
   text-align: center;
-  font-size: 30px;
-  font-weight: 900;
-  padding-bottom: 10px;
-  color: #6a11cb;
-  border-bottom: 1px solid #333;
+  color: #7f38ec;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid  #7695ff;
 }
+
 .contact-divide {
-  height: 450px;
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 20px;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-divide > * {
+  flex: 1 1 45%;
 }
 
 @media (max-width: 768px) {
-  .contact-container {
-    height: 100vh;
-  }
   .contact-divide {
     flex-direction: column;
-    gap: 20px;
+  }
+
+  .contact-divide > * {
+    flex: 1 1 100%;
+  }
+
+  .contact-head {
+    font-size: 1.5rem;
   }
 }

@@ -11,31 +11,31 @@ function SkillIcon() {
   return (
     <div className="skills-container ">
       <div className="icon container1">
-        <TiHtml5 size={60}/>
+        <TiHtml5 size={40}/>
         <span className="icon-name">HTML</span>
       </div>
       <div className="icon container2">
-        <IoLogoCss3 size={60}/>
+        <IoLogoCss3 size={40}/>
         <span className="icon-name">CSS</span>
       </div>
       <div className="icon container3">
-        <FaJs size={60}/>
+        <FaJs size={40}/>
         <span className="icon-name">Javascript</span>
       </div>
       <div className="icon container4">
-        <FaReact size={60}/>
+        <FaReact size={40}/>
         <span className="icon-name">Java</span>
       </div>
       <div className="icon container5">
-        <FaPython                  size={60}/>
+        <FaPython size={40}/>
         <span className="icon-name">Java</span>
       </div>
       <div className="icon container6">
-        <FaJava size={60}/>
+        <FaJava size={40}/>
         <span className="icon-name">Java</span>
       </div>
       <div className="icon container7">
-        <SiSpringboot size={60}/>
+        <SiSpringboot size={40}/>
         <span className="icon-name">Java</span>
       </div>
      

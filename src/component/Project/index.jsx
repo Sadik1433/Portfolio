@@ -10,15 +10,15 @@ const Project = ({ blog }) => {
     <AnimatePresence>
       <motion.div
         initial={{ opacity: 0, x: -100, y: 0 }}
-        whileInView={{ opacity: 10, x: 10, y: 10 }} // exact location
+        whileInView={{ opacity: 10, x: 10, y: 10 }} 
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1.5 }}
       >
         <div className="card">
           <div className="card-details">
             <p className="text-title">{projectName}</p>
-            <p className="text-body">{lang}</p>
-            <p className="text-body">{purpose}</p>
+            <p className="text-body">{lang}.</p>
+            <p className="text-body"> {purpose}.</p>
           </div>
           <button className="card-button">Open</button>
         </div>

@@ -1,59 +1,57 @@
+
 .education {
-  height: 280px;
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid transparent;
-  border-radius: 20px;
+  padding: 1rem 1.5rem;
 }
+
 .edu-head {
-  font-size: 20px;
+  font-size: 1.5rem;
+  color: #7f38ec;
+  font-weight: bold;
   text-align: center;
-  color: #6256ca;
-  font-weight: 500;
-  font-family: sans-serif;
-  padding-bottom: 10px;
-  text-decoration: 2px solid underline;
-  text-underline-offset: 8px;
+  margin-bottom: 1.5rem;
 }
+
 .list-degree {
   list-style-type: none;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #ddd;
 }
+
 .course-name {
-  font-size: 18px;
-  font-weight: 700;
-  color: #4379f2;
+  font-size: 1.1rem;
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
 }
+
 .clg-name {
-  font-size: 16px;
-  font-weight: 500;
-  color: #6256ca;
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
 }
+
 .year {
-  font-size: 12px;
-  font-weight: 400;
-  color: #ff8a8a;
+  display: block;
+  font-size: 0.85rem;
+  color: #ff6d00;
+  margin-top: 0.2rem;
 }
 
 @media (max-width: 768px) {
-  .education {
-    height: 300px;
-  }
   .edu-head {
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 1.3rem;
   }
+
   .course-name {
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 1rem;
   }
+
   .clg-name {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 0.9rem;
   }
+
   .year {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 0.8rem;
   }
 }

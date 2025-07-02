@@ -7,7 +7,7 @@ function ContactService() {
     <motion.div
       initial={{ opacity: 0, x: 30 }} //right to left
       whileInView={{ opacity: 1, x: 0}}
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 1.5 }}
     >
       <div className="contact-service-container">

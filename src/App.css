@@ -4,10 +4,9 @@ body {
   box-sizing: border-box;
   overflow: hidden;
   overflow-y: scroll;
-  font-family: sans-serif;
+  font-family: sans;
 }
 .app-container {
-  background-color: #f0f0f0;
-  color: #2b2b2b;
-  padding: 10px;
+  background-color: #ffffff;
+  color: #393E46;
 }

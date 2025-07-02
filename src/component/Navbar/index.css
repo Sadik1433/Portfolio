@@ -2,10 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f0f0f0;
   padding: 15px 20px;
-  color: white;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
+  color: #205781;
   position: sticky;
   top: 0;
   right: 0;
@@ -48,7 +47,7 @@
   box-shadow: 0 0 15px rgba(41, 128, 185, 0.6);
 }
 .active {
-  background-color: #2980b9;
+  background-color: #7f38ec;
   color: #f1f1f1;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -67,7 +66,7 @@
     width: 300px;
     padding: 20px;
     display: none;
-    color: #ff0b55;
+    color: #007bff;
     background-color: transparent;
     box-shadow: none;
   }
