@@ -1,29 +1,24 @@
-import { motion } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
-
 import "./index.css";
+import { FaGamepad, FaSmile, FaBriefcase, FaTasks } from "react-icons/fa";
 
-const Project = ({ blog }) => {
-  const { projectName, lang, purpose } = blog;
+const icons = {
+  "Tic-Tac-Toe": <FaGamepad className="icon" />,
+  EmojiGame: <FaSmile className="icon" />,
+  "Job Search": <FaBriefcase className="icon" />,
+  Todolist: <FaTasks className="icon" />,
+};
 
+const Project = ({ title, description }) => {
   return (
-    <AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0, x: -100, y: 0 }}
-        whileInView={{ opacity: 10, x: 10, y: 10 }} 
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1.5 }}
-      >
-        <div className="card">
-          <div className="card-details">
-            <p className="text-title">{projectName}</p>
-            <p className="text-body">{lang}.</p>
-            <p className="text-body"> {purpose}.</p>
-          </div>
-          <button className="card-button">Open</button>
-        </div>
-      </motion.div>
-    </AnimatePresence>
+    <div className="project-card" data-aos="fade-right">
+      <div className="project-icon">
+        <span>{icons[title]}</span>
+        <h3>{title}</h3>
+      </div>
+      <p>{description}</p>
+      <button>Open</button>
+    </div>
   );
 };
+
 export default Project;

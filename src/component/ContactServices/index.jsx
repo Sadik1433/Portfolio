@@ -1,16 +1,10 @@
 import './index.css'
-import { motion } from "framer-motion";
 import SocialMedia from "../SocialMedia";
 
 function ContactService() {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 30 }} //right to left
-      whileInView={{ opacity: 1, x: 0}}
-      viewport={{ once: true, amount: 0.5 }}
-      transition={{ duration: 1.5 }}
-    >
-      <div className="contact-service-container">
+
+      <div className="contact-service-container"  data-aos="fade-left">
         <div className="main-container">
           <div className="service-container">
             <h6 className="footer-head">Services</h6>
@@ -34,7 +28,6 @@ function ContactService() {
           </div>
         </div>
       </div>
-    </motion.div>
   );
 }
 

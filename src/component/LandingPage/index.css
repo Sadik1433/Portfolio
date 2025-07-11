@@ -30,14 +30,6 @@ section#home {
   font-size: 1.5rem;
 }
 
-.name-text {
-  color: #007bff;
-  font-weight: bold;
-  font-size: 3.5rem;
-  padding-left: 80px;
-  font-style: italic;
-  font-family: sans;
-}
 
 .para-text {
   font-size: 1.2rem;
@@ -67,6 +59,35 @@ section#home {
   background-color: #0056b3;
 }
 
+.typewriter {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 3.5rem;
+  padding-left: 80px;
+  font-style: italic;
+  font-family: sans;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  animation: typing 3s steps(10, end), blink 0.75s step-end infinite;
+  font-weight: bold;
+}
+
+@keyframes typing {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}   
 @media (max-width: 768px) {
   .landing-container {
     min-height: 80vh;

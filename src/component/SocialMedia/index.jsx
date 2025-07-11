@@ -6,7 +6,7 @@ import './index.css'
 
 const SocialMedia = () => {
   return (
-    <ul className="social-container">
+    <ul className="social-container" data-aos="fade-up-right">
       <li className="icon-content">
         <a
           href="https://linkedin.com/"

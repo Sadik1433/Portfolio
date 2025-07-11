@@ -1,6 +1,7 @@
 
 .education {
   padding: 1rem 1.5rem;
+  min-width: 400px;
 }
 
 .edu-head {

@@ -1,46 +1,29 @@
-
-.project-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  border-radius: 16px;
+.projects-section {
+  min-height: 100vh;
+  padding: 30px 10px;
+  text-align: center;
 }
 
-.project-head {
-  text-align: center;
+.projects-section h2 {
   font-size: 2rem;
-  color: #7f38ec;
-  font-weight: bold;
-  margin-bottom: 1rem;  
-  border-bottom: 1px solid  #7695ff;
+  margin-bottom: 20px;
+  color: #6f42c1;
 }
-
-.project-description {
+.project-para-container {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+.project-para {
+  width: 80%;
+  font-size: 1.25rem;
   text-align: center;
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
 }
-
-.descr-para {
-  font-size: 1.5rem;
-  line-height: 1.7;
-}
-.project-display-container {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .project-head {
-    font-size: 1.6rem;
-  }
-
-  .descr-para {
-    font-size: 1rem;
-    padding: 0 0.5rem;
-  }
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }

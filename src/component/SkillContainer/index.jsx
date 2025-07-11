@@ -1,6 +1,6 @@
 import Education from "../Education";
+import SkillsBlog from "../SkillBlog";
 import SkillDescription from "../SkillDescription";
-import SkillIcon from "../SkillIcon";
 import "./index.css";
 
 function SkillContainer() {
@@ -13,7 +13,7 @@ function SkillContainer() {
           <Education />
         </div>
         <div className="icon-skill-container">
-          <SkillIcon />
+          <SkillsBlog />
         </div>
       </div>
     </section>
