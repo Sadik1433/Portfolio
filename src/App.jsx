@@ -6,12 +6,15 @@ import Navbar from "./component/Navbar/index.jsx";
 import LandingPage from "./component/LandingPage/index.jsx";
 import ProjectContainer from "./component/ProjectContainer/index.jsx";
 import SkillContainer from "./component/SkillContainer/index.jsx";
-import Contact from "./component/Contact/index.jsx";
 import Footer from "./component/Footer/index.jsx";
+import Services from "./component/Services/index.jsx";
+import ContactForm from "./component/ContactForm/index.jsx";
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1500 ,
+      once:false,
+    });
   }, []);
 
   return (
@@ -21,7 +24,8 @@ function App() {
         <LandingPage />
         <SkillContainer />
         <ProjectContainer />
-        <Contact />
+        <Services />
+        <ContactForm />
         <Footer />
       </div>
     </>

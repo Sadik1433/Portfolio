@@ -1,14 +1,13 @@
 section#home {
-  padding: 2rem;
+  padding: 1rem;
 }
-
 .landing-container {
   min-height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -23,16 +22,16 @@ section#home {
 }
 
 .text-container {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .name-head {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 
 .para-text {
-  font-size: 1.2rem;
+  font-size: 1.75rem;
   margin: 1rem 0;
 }
 
@@ -62,7 +61,7 @@ section#home {
 .typewriter {
   color: #007bff;
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   padding-left: 80px;
   font-style: italic;
   font-family: sans;

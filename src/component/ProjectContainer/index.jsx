@@ -22,7 +22,7 @@ const projectData = [
 
 const ProjectContainer = () => {
   return (
-    <section className="projects-section" id="project" >
+    <section className="projects-section" id="project"  data-aos="fade-right">
       <h2>Projects</h2>
       <div className="project-para-container">
         <p className="project-para">

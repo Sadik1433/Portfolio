@@ -10,7 +10,7 @@ const icons = {
 
 const Project = ({ title, description }) => {
   return (
-    <div className="project-card" data-aos="fade-right">
+    <div className="project-card" data-aos="fade-down">
       <div className="project-icon">
         <span>{icons[title]}</span>
         <h3>{title}</h3>
