@@ -1,6 +1,6 @@
-import SocialMedia from "../SocialMedia";
 import avatar from "../Assets/avatar.png";
 import "./index.css";
+import SocialMedia from "../SocialMedia";
 
 function LandingPage() {
   return (
@@ -27,7 +27,7 @@ function LandingPage() {
           </div>
         </div>
         <div className="image-container">
-          <img src={avatar} alt="image" data-aos="fade"/>
+          <img src={avatar} alt="image" data-aos="fade" />
         </div>
       </div>
     </section>

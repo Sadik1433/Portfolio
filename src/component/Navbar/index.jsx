@@ -1,10 +1,24 @@
 import "./index.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { GiAngelOutfit } from "react-icons/gi";
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [theme, setTheme] = useState("light");
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -13,7 +27,7 @@ const Navbar = () => {
     <nav className="navbar-container">
       <div>
         <h1 className="logo">
-          <GiAngelOutfit size={35}/>
+          <GiAngelOutfit size={35} />
         </h1>
       </div>
       <div className="menu-icon" onClick={toggleMenu}>
@@ -26,6 +40,7 @@ const Navbar = () => {
           smooth={true}
           offset={-70}
           duration={500}
+          onClick={handleLinkClick}
           activeClass="active"
           className="list-btn"
         >
@@ -38,6 +53,7 @@ const Navbar = () => {
           smooth={true}
           offset={-70}
           duration={500}
+          onClick={handleLinkClick}
           activeClass="active"
           className="list-btn"
         >
@@ -49,6 +65,7 @@ const Navbar = () => {
           smooth={true}
           offset={-70}
           duration={500}
+          onClick={handleLinkClick}
           activeClass="active"
           className="list-btn"
         >
@@ -61,6 +78,7 @@ const Navbar = () => {
           smooth={true}
           offset={-70}
           duration={500}
+          onClick={handleLinkClick}
           activeClass="active"
           className="list-btn"
         >
@@ -72,11 +90,16 @@ const Navbar = () => {
           smooth={true}
           offset={-70}
           duration={500}
+          onClick={handleLinkClick}
           activeClass="active"
           className="list-btn"
         >
           <li> Contact</li>
         </Link>
+
+        <button onClick={toggleTheme} className="list-btn toggle-theme">
+         {theme === 'light' ? <FaMoon /> : <FaSun />}
+        </button>
       </ul>
     </nav>
   );

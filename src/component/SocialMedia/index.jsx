@@ -1,57 +1,33 @@
-import { BiLogoInstagram } from "react-icons/bi";
-import { FaYoutube } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa6";
+import { BsInstagram } from "react-icons/bs";
+import "./index.css";
 import { FaLinkedin } from "react-icons/fa";
-import './index.css'
+import { FaGithub } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const SocialMedia = () => {
   return (
-    <ul className="social-container" data-aos="fade-up-right">
-      <li className="icon-content">
-        <a
-          href="https://linkedin.com/"
-          aria-label="LinkedIn"
-          data-social="linkedin"
-        >
-          <div className="filled"></div>
-          <FaLinkedin className="icons"/>
-        </a>
-        <div className="tooltip">LinkedIn</div>
-      </li>
-      <li className="icon-content">
-        <a
-          href="https://www.github.com/"
-          aria-label="GitHub"
-          data-social="github"
-        >
-          <div className="filled"></div>
-          <FaGithub className="icons"/>
-        </a>
-        <div className="tooltip">GitHub</div>
-      </li>
-      <li className="icon-content">
-        <a
-          href="https://www.instagram.com/"
-          aria-label="Instagram"
-          data-social="instagram"
-        >
-          <div className="filled"></div>
-            <BiLogoInstagram className="icons"/>
-        </a>
-        <div className="tooltip">Instagram</div>
-      </li>
-      <li className="icon-content">
-        <a
-          href="https://youtube.com/"
-          aria-label="Youtube"
-          data-social="youtube"
-        >
-          <div className="filled"></div>
-          <FaYoutube className="icons" />
-        </a>
-        <div className="tooltip">Youtube</div>
-      </li>
-    </ul>
+    <div>
+      <ul class="wrapper">
+        <li class="icon linkedin">
+          <span class="tooltip">LinkedIn</span>
+          <FaLinkedin className="app-icon" />
+        </li>
+        <li class="icon Github">
+          <span class="tooltip">Github</span>
+          <FaGithub className="app-icon" />
+        </li>
+        <li class="icon instagram">
+          <span class="tooltip">Instagram</span>
+          <BsInstagram className="app-icon"/>
+        </li>
+        <li class="icon whatsapp">
+          <span class="tooltip">WhatsApp</span>
+          <FaWhatsapp className="app-icon"/>
+        </li>
+
+      </ul>
+    </div>
   );
 };
-export default SocialMedia
+
+export default SocialMedia;

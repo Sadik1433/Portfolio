@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./index.css";
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -19,17 +21,19 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" >
-    <h1 className="contact-heading">Contact</h1>
-      <div className="contact-container" data-aos="fade-right">
-        <div className="contact-para-container">
-          <p className="contact-para">
-            I'm skilled in Java, Python, JavaScript, SQL, HTML, CSS, React, and
-            Node.js. I specialize in building full-stack web applications with
-            clean UI and efficient backend services. Have a project in mind or
-            need help with your website or app? Feel free to reach out through
-            the form below!
-          </p>
+    <section id="contact">
+      <h1 className="contact-heading">Contact</h1>
+      <div className="contact">
+        <div className="contact-container" data-aos="fade-right">
+          <div className="contact-para-container ">
+            <p className="contact-para">
+              I'm skilled in Java, Python, JavaScript, SQL, HTML, CSS, React,
+              and Node.js. I specialize in building full-stack web applications
+              with clean UI and efficient backend services. Have a project in
+              mind or need help with your website or app? Feel free to reach out
+              through the form below!
+            </p>
+          </div>
         </div>
         <div className="form-container" data-aos="slide-left">
           <form onSubmit={handleSubmit} className="contact-form">
@@ -62,6 +66,17 @@ const ContactForm = () => {
             ></textarea>
             <button type="submit">Submit</button>
           </form>
+        </div>
+      </div>
+      <div className="contact-note">
+        <div className="contact-info">
+          I'll get back to you as soon as possible. Thank you for reaching out!
+          <br />
+          Based in India 🌐 | Available for freelance & full-time work
+        </div>
+        <div className="contact-social">
+          <FaLinkedin size={30} />
+          <MdEmail size={30} />
         </div>
       </div>
     </section>

@@ -19,7 +19,7 @@
 }
 
 .service-card {
-  background: #fff;
+  background: var(--card-color);
   padding: 10px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
@@ -47,6 +47,7 @@
 }
 
 .service-card p {
+  color: #007bff;
   font-size: 1.15rem;
   font-weight: 400;
 }

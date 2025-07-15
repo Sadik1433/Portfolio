@@ -1,3 +1,19 @@
+:root {
+  --bg-color: #f0f0f0;
+  --text-color: #121212;
+  --card-color: #f4f4f4;
+  --button-color: #7f38ec;
+  --button-text-color: ;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1f2531;
+  --text-color: #ffffff;
+  --card-color: #1f253a;
+  --button-color: #7f38ec;
+  --button-text-color: #f0f0f0;
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -6,7 +22,9 @@ body {
   overflow-y: scroll;
   font-family: sans;
 }
+
 .app-container {
-  background-color: #ffffff;
-  color: #393E46;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
 }

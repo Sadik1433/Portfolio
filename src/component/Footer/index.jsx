@@ -6,7 +6,7 @@ function Footer() {
       <footer className="footer-container">
         <aside>
           <p className="">
-            © Sadik {new Date().getFullYear()} Industries Ltd
+           © 2025 Sadik | All Rights Reserved
           </p>
         </aside>
       </footer>
