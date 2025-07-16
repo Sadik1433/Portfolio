@@ -23,6 +23,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  
   return (
     <nav className="navbar-container">
       <div>
@@ -97,7 +98,7 @@ const Navbar = () => {
           <li> Contact</li>
         </Link>
 
-        <button onClick={toggleTheme} className="list-btn toggle-theme">
+        <button onClick={toggleTheme} className="toggle-theme">
          {theme === 'light' ? <FaMoon /> : <FaSun />}
         </button>
       </ul>

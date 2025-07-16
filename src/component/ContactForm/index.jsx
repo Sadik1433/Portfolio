@@ -74,10 +74,6 @@ const ContactForm = () => {
           <br />
           Based in India 🌐 | Available for freelance & full-time work
         </div>
-        <div className="contact-social">
-          <FaLinkedin size={30} />
-          <MdEmail size={30} />
-        </div>
       </div>
     </section>
   );

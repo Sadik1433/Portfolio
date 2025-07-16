@@ -2,10 +2,10 @@ import "./index.css";
 import { FaGamepad, FaSmile, FaBriefcase, FaTasks } from "react-icons/fa";
 
 const icons = {
-  "Tic-Tac-Toe": <FaGamepad className="icon" />,
-  EmojiGame: <FaSmile className="icon" />,
-  "Job Search": <FaBriefcase className="icon" />,
-  Todolist: <FaTasks className="icon" />,
+  "Tic-Tac-Toe": <FaGamepad className="project-icons" />,
+  EmojiGame: <FaSmile className="project-icons" />,
+  "Job Search": <FaBriefcase className="project-icons" />,
+  Todolist: <FaTasks className="project-icons" />,
 };
 
 const Project = ({ title, description }) => {

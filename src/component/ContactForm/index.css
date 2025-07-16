@@ -1,5 +1,5 @@
 #contact {
-  padding: 1rem;
+  padding: 0.5rem;
   min-height: 100vh;
   width: 100%;
 }
@@ -25,8 +25,8 @@
 }
 .form-container {
   margin: 10px auto;
-  max-height: 450px;
-  padding: 20px;
+  max-height: 480px;
+  padding: 10px 20px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px var(--text-color);
   font-family: "Segoe UI", sans-serif;
@@ -46,13 +46,15 @@
 }
 
 .contact-form label {
-  margin: 10px 0 5px;
-  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 15px 0 5px;
+  font-weight: 900;
   color: #7f38ec;
 }
 
 .contact-form input,
 .contact-form textarea {
+  width: 90%;
   padding: 10px;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -78,7 +80,8 @@
   align-self: center;
   width: 40%;
   margin-top: 20px;
-  padding: 8px;
+  margin-bottom: 20px;
+  padding: 12px 30px;
   background-color: #7f38ec;
   border: none;
   color: white;
@@ -92,14 +95,14 @@
 .contact-form button:hover {
   background-color: #076879d0;
 }
-.contact-note{
+.contact-note {
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.contact-info{
-  font-size: 1.15rem;
+.contact-info {
+  font-size: 1.50rem;
   display: flex;
   justify-content: center;
 }
@@ -111,23 +114,16 @@
   font-size: 22px;
 }
 
-
 @media (max-width: 768px) {
   .contact {
     flex-direction: column;
+    align-items: center;
   }
   .contact-container {
-    width: 100%;
-  }
-  .form-container {
-    max-height: 500px;
-    width: 100%;
-    font-size: 1.5rem;
-    line-height: 30px;
+    width: 80%;
   }
   .contact-form {
-    min-width: 280px;
-    max-width: 320px;
     padding: 10px;
   }
+
 }

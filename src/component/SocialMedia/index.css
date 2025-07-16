@@ -1,9 +1,9 @@
 .wrapper {
   display: inline-flex;
   list-style: none;
-  height: 120px;
+  height: 80px;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 10px;
   font-family: "Poppins", sans-serif;
   justify-content: center;
 }
@@ -11,7 +11,7 @@
 .wrapper .icon {
   position: relative;
   background: var(--bg-color);
-  color: var(--button-color);
+  color: var(--icon-color);
   border-radius: 50%;
   margin: 10px;
   width: 50px;
@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow:  -1px -1px 4px var(--icon-color);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -59,7 +59,8 @@
   pointer-events: auto;
 }
 .app-icon{
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 500;
 }
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {

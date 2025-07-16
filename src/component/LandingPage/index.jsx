@@ -8,11 +8,11 @@ function LandingPage() {
       <div className="landing-container" data-aos="fade-right">
         <div className="bio-container">
           <div className="text-container">
-            <h1 className="name-head">
+            <p className="name-head">
               Hi, I am
               <br />
               <span className="typewriter">Sadik</span>
-            </h1>
+            </p>
             <p className="para-text">
               I'm a passionate Web Developer with expertise in React, Java,
               python. I love building intuitive and efficient solutions that

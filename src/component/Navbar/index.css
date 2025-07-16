@@ -32,27 +32,29 @@
   text-align: center;
   color: var(--button-text-color);
   padding: 5px 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  border: 1px solid transparent;
-  border-radius: 20px;
 }
 
 .list-btn:hover {
+  border-bottom: 2px solid var(--navbar-color);
   transform: scale(1.05);
-  box-shadow: 0 1px 0px var(--button-text-color);
 }
 
 .active {
-  background-color: #7f38ec;
-  color: #f0f0f0;
-  cursor: pointer;
+  color: #7f38ec;
+  border-bottom: 3px solid var(--navbar-color);
+  border-collapse: collapse;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .toggle-theme {
   width: 30px;
-  background-color: var(--bg-color);
+  font-size: 20px;
+  background: transparent;
+  color: var(--text-color);
+  border: none;
 }
 @media (max-width: 768px) {
   .menu-icon {

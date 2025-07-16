@@ -3,7 +3,8 @@
   --text-color: #121212;
   --card-color: #f4f4f4;
   --button-color: #7f38ec;
-  --button-text-color: ;
+  --icon-color:#1f2531; 
+  --navbar-color:  #7f38ec;
 }
 
 [data-theme="dark"] {
@@ -12,6 +13,8 @@
   --card-color: #1f253a;
   --button-color: #7f38ec;
   --button-text-color: #f0f0f0;
+  --icon-color: #f0f0f0;
+  --navbar-color: #56DFCF;
 }
 
 body {

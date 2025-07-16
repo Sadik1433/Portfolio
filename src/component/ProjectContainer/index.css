@@ -1,12 +1,11 @@
-.projects-section {
+.projects-section{
   min-height: 100vh;
-  padding: 30px 10px;
+  padding: 5px 20px;
   text-align: center;
 }
 
 .projects-section h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
   color: #6f42c1;
 }
 .project-para-container {
