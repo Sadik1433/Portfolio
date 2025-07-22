@@ -1,10 +1,10 @@
-#contact {
-  padding: 0.5rem;
+.contact-section{
   min-height: 100vh;
   width: 100%;
+  padding: 10px 20px;
+
 }
 .contact {
-  padding: 10px 20px;
   display: flex;
   flex-direction: row;
 }
@@ -24,9 +24,9 @@
   font-weight: 500;
 }
 .form-container {
-  margin: 10px auto;
-  max-height: 480px;
-  padding: 10px 20px;
+  margin: 2px auto;
+  max-height: 450px;
+  padding: 10px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px var(--text-color);
   font-family: "Segoe UI", sans-serif;
@@ -34,7 +34,7 @@
 .contact-form {
   min-width: 350px;
   max-width: 350px;
-  padding: 10px;
+  padding: 0px 10px;
   display: flex;
   flex-direction: column;
 }
@@ -47,7 +47,7 @@
 
 .contact-form label {
   font-size: 1.05rem;
-  margin: 15px 0 5px;
+  margin: 15px 0 2px;
   font-weight: 900;
   color: #7f38ec;
 }
@@ -105,13 +105,6 @@
   font-size: 1.50rem;
   display: flex;
   justify-content: center;
-}
-.contact-social {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-size: 22px;
 }
 
 @media (max-width: 768px) {

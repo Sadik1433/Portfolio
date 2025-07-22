@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect} from "react";
 import Navbar from "./component/Navbar/index.jsx";
-import LandingPage from "./component/LandingPage/index.jsx";
+import Home from "./component/Home/index.jsx";
 import ProjectContainer from "./component/ProjectContainer/index.jsx";
 import SkillContainer from "./component/SkillContainer/index.jsx";
 import Footer from "./component/Footer/index.jsx";
@@ -20,7 +20,7 @@ function App() {
     <>
       <Navbar />
       <div className="app-container"> 
-        <LandingPage />
+        <Home />
         <SkillContainer />
         <ProjectContainer />
         <Services />

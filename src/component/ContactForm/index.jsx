@@ -1,7 +1,5 @@
 import { useState } from "react";
 import "./index.css";
-import { FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +19,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact">
+    <section id="contact" className="contact-section">
       <h1 className="contact-heading">Contact</h1>
       <div className="contact">
         <div className="contact-container" data-aos="fade-right">
