@@ -7,21 +7,21 @@ import { FaWhatsapp } from "react-icons/fa6";
 const SocialMedia = () => {
   return (
     <div>
-      <ul class="wrapper">
-        <li class="icon linkedin">
-          <span class="tooltip">LinkedIn</span>
+      <ul className="wrapper">
+        <li className="icon linkedin">
+          <span className="tooltip">LinkedIn</span>
           <FaLinkedin className="app-icon" />
         </li>
-        <li class="icon Github">
-          <span class="tooltip">Github</span>
+        <li className="icon Github">
+          <span className="tooltip">Github</span>
           <FaGithub className="app-icon" />
         </li>
-        <li class="icon instagram">
-          <span class="tooltip">Instagram</span>
+        <li className="icon instagram">
+          <span className="tooltip">Instagram</span>
           <BsInstagram className="app-icon"/>
         </li>
-        <li class="icon whatsapp">
-          <span class="tooltip">WhatsApp</span>
+        <li className="icon whatsapp">
+          <span className="tooltip">WhatsApp</span>
           <FaWhatsapp className="app-icon"/>
         </li>
 

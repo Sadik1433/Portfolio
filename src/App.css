@@ -1,15 +1,17 @@
 :root {
-  --bg-color: #f0f0f0;
-  --text-color: #121212;
+  --bg-color: rgba(211, 211, 211, 0.808);
+  --text-color:  #0B1B32;
   --card-color: #f4f4f4;
   --icon-color:#1f2531; 
-  --navbar-color:  #7f38ec;
+  --navbar-bg-color:  #f0f0f0;
+  --navbar-color: #56DFCF;
 }
 
 [data-theme="dark"] {
   --bg-color: #1f2531;
   --text-color: #ffffff;
   --card-color: #1f253a;
+  --navbar-bg-color:  #1f2531;
   --button-text-color: #f0f0f0;
   --icon-color: #f0f0f0;
   --navbar-color: #56DFCF;
@@ -25,7 +27,7 @@ body {
 }
 
 .app-container {
-  background-color: var(--bg-color);
+  background: var(--bg-color);
   color: var(--text-color);
   transition: all 0.3s ease;
 }

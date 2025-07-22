@@ -20,12 +20,25 @@
   object-fit: cover;
 }
 
+
 .text-container {
   max-width: 800px;
 }
 
 .name-head {
   font-size: 1.75rem;
+}
+
+
+.profile-name {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  padding-left: 80px;
+  font-style: italic;
+  font-family: sans;
+   font-weight: bold;
 }
 .para-text {
   font-size: 1.75rem;
@@ -49,45 +62,22 @@
   background-color:transparent;
   color: var(--button-text-color);
   padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: sans;
   border-radius: 20px;
   box-shadow: 0 0 10px var(--navbar-color);
   cursor: pointer;
 }
 
 .resume-btn:hover {
-  background-color: #0056b3;
+  background-color: #7f38ec;
+  color: #ffffff;
+  box-shadow: 0 0 15px #7f38ec;
+  transition: all 0.3s ease;
 }
 
-.typewriter {
-  color: #007bff;
-  font-weight: bold;
-  font-size: 2.5rem;
-  margin-top: 10px;
-  padding-left: 80px;
-  font-style: italic;
-  font-family: sans;
-  display: inline-block;
-  overflow: hidden;
-  border-right: 2px solid white;
-  white-space: nowrap;
-  animation: typing 3s steps(10, end), blink 0.75s step-end infinite;
-  font-weight: bold;
-}
 
-@keyframes typing {
-  from {
-    width: 10%;
-  }
-  to {
-    width: 50%;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}   
 @media (max-width: 768px) {
   .landing-container {
     min-height: 80vh;

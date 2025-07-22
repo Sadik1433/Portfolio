@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg-color);
+  background: var(--navbar-bg-color);
   position: sticky;
   top: 0;
   right: 0;
@@ -12,8 +12,27 @@
   padding: 0px 20px;
   box-shadow: 0 0 5px var(--text-color);
 }
-
+.logo-container {
+  min-width: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 .logo {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: -19px;
+  color: #7f38ec;
+}
+.logo-text {
+  position: absolute;
+  left: 39px;
+  top: 10px;
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: 900;
   color: #7f38ec;
 }
 .menu-icon {
@@ -37,15 +56,17 @@
 }
 
 .list-btn:hover {
-  border-bottom: 2px solid var(--navbar-color);
-  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
+  color: #7f38ec;
+  cursor: pointer;
 }
 
 .active {
   color: #7f38ec;
-  border-bottom: 3px solid var(--navbar-color);
-  border-collapse: collapse;
-  transition: all 0.3s ease;
+  border: 1px solid #7f38ec;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
 
