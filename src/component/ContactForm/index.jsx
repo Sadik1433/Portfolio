@@ -66,13 +66,6 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-      <div className="contact-note">
-        <div className="contact-info">
-          I'll get back to you as soon as possible. Thank you for reaching out!
-          <br />
-          Based in India 🌐 | Available for freelance & full-time work
-        </div>
-      </div>
     </section>
   );
 };

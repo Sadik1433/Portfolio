@@ -3,12 +3,11 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 import { GiFeatheredWing } from "react-icons/gi";
-import { GiAngelOutfit } from "react-icons/gi";
 import { FaSun, FaMoon } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const handleLinkClick = () => {
     setIsOpen(false);

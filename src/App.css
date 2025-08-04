@@ -1,33 +1,39 @@
 :root {
   --bg-color: rgba(211, 211, 211, 0.808);
-  --text-color:  #0B1B32;
+  --text-color: #0b1b32;
   --card-color: #f4f4f4;
-  --icon-color:#1f2531; 
-  --navbar-bg-color:  #f0f0f0;
-  --navbar-color: #56DFCF;
+  --icon-color: #1f2531;
+  --navbar-bg-color: #f0f0f0;
+  --navbar-color: #56dfcf;
 }
 
 [data-theme="dark"] {
   --bg-color: #1f2531;
   --text-color: #ffffff;
   --card-color: #1f253a;
-  --navbar-bg-color:  #1f2531;
+  --navbar-bg-color: #1f2531;
   --button-text-color: #f0f0f0;
   --icon-color: #f0f0f0;
-  --navbar-color: #56DFCF;
+  --navbar-color: #56dfcf;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  overflow: hidden;
   overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: sans;
+  overflow-x: hidden;
   font-family: sans;
 }
 
 .app-container {
   background: var(--bg-color);
   color: var(--text-color);
-  transition: all 0.3s ease;
 }

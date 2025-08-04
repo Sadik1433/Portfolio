@@ -27,6 +27,7 @@
 @media (max-width: 768px) {
 .description-container{
   width: 100%;
+  padding: 10px;
 }
   .about-head {
     font-size: 1.6rem;

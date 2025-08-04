@@ -1,8 +1,6 @@
-.contact-section{
+.contact-section {
   min-height: 100vh;
-  width: 100%;
-  padding: 10px 20px;
-
+  min-width: 100%;
 }
 .contact {
   display: flex;
@@ -102,21 +100,30 @@
   justify-content: center;
 }
 .contact-info {
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
 }
-
 @media (max-width: 768px) {
   .contact {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+  .contact-section {
+    padding: auto;
   }
   .contact-container {
+    width: 80%;
+    text-align: justify;
+  }
+  .contact-para {
+    font-size: 1.15rem;
+  }
+  .form-container {
     width: 80%;
   }
   .contact-form {
     padding: 10px;
   }
-
 }

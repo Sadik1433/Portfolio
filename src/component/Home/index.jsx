@@ -1,8 +1,10 @@
 import avatar from "../Assets/avatar.png";
+import { FaDownload } from "react-icons/fa";
 import "./index.css";
 import SocialMedia from "../SocialMedia";
 
 function LandingPage() {
+  
   return (
     <section id="home">
       <div className="landing-container" data-aos="fade-right">
@@ -22,7 +24,11 @@ function LandingPage() {
               <SocialMedia />
             </div>
             <div className="btn-container">
-              <button className="resume-btn">Resume</button>
+             <a href="/Sadik_Resume.pdf" download="Sadik_Resume.pdf" >
+              <button className="resume-btn">
+           Resume  <FaDownload className="resume-icon"/>
+              </button>
+        </a> 
             </div>
           </div>
         </div>

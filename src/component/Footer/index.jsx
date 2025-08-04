@@ -2,7 +2,7 @@ import './index.css'
 
 function Footer() {
   return (
-    <div>
+    <div className='footer-page'>
       <footer className="footer-container">
         <aside>
           <p className="">
