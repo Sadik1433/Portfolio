@@ -1,17 +1,17 @@
 :root {
-  --bg-color: rgba(211, 211, 211, 0.808);
-  --text-color: #0b1b32;
+  --bg-color: #F7F7F7;
+  --text-color: #030b1c;
   --card-color: #f4f4f4;
   --icon-color: #1f2531;
-  --navbar-bg-color: #f0f0f0;
+  --navbar-bg-color: #F7F7F7;
   --navbar-color: #56dfcf;
 }
 
 [data-theme="dark"] {
-  --bg-color: #1f2531;
+  --bg-color: #030b1c;
   --text-color: #ffffff;
   --card-color: #1f253a;
-  --navbar-bg-color: #1f2531;
+  --navbar-bg-color: #030b1c;
   --button-text-color: #f0f0f0;
   --icon-color: #f0f0f0;
   --navbar-color: #56dfcf;
