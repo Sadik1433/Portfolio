@@ -20,24 +20,19 @@
   --shadow: #D0A2F7;
   --btn-hover-color: #D0A2F7;
 }
-
-* {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
 body {
+  background-color: aqua;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  overflow-y: scroll;
-  overflow-x: hidden;
   font-family: sans;
   overflow-x: hidden;
+  overflow-y: scroll;
   font-family: sans;
 }
 
 .app-container {
+  overflow-x: hidden;
   background: var(--bg-color);
   color: var(--text-color);
 }

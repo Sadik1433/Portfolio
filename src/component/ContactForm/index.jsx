@@ -35,7 +35,7 @@ const ContactForm = () => {
         </div>
         <div className="form-container" data-aos="slide-left">
           <form onSubmit={handleSubmit} className="contact-form">
-            <h2>Contact Me!</h2>
+            <h2>Contact Me</h2>
             <label>Email:</label>
             <input
               type="email"

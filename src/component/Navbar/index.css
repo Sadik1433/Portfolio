@@ -80,6 +80,7 @@
 }
 @media (max-width: 768px) {
   .navbar-container{
+    min-height: 80px;
     justify-content: flex-end;
   }
   .menu-icon {

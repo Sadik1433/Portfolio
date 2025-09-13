@@ -111,7 +111,8 @@
     justify-content: center;
   }
   .form-container {
-    width: 90%;
+    width: 80%;
+    margin: 0px auto;
     max-height: 500px;
     justify-content: center;
   }
@@ -119,7 +120,7 @@
     min-height: 300px;
     max-height: 420px;
     min-width: 100px;
-    background-color: red;
+    padding-bottom: 10px;
   }
   .contact-section {
     padding: auto;
