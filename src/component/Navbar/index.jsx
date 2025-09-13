@@ -1,8 +1,6 @@
 import "./index.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-
-import { GiFeatheredWing } from "react-icons/gi";
 import { FaSun, FaMoon } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -27,12 +25,6 @@ const Navbar = () => {
   
   return (
     <nav className="navbar-container">
-      <div className="logo-container">
-        <span >
-          <GiFeatheredWing className="logo" />
-        </span>
-        <span className="logo-text">Sadik</span> 
-      </div>
       <div className="menu-icon" onClick={toggleMenu}>
         ☰
       </div>

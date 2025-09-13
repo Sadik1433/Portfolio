@@ -1,7 +1,7 @@
 .navbar-container {
   max-height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: var(--navbar-bg-color);
   position: sticky;
@@ -79,6 +79,9 @@
   border: none;
 }
 @media (max-width: 768px) {
+  .navbar-container{
+    justify-content: flex-end;
+  }
   .menu-icon {
     display: block;
   }

@@ -13,7 +13,7 @@ function LandingPage() {
             <p className="name-head">
               Hi, I am
               <br />
-              <span className="profile-name">Sadik</span>
+              <span className="profile-name">S.Sadik</span>
             </p>
             <p className="para-text">
               I'm a passionate Web Developer with expertise in React, Java,

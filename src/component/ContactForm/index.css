@@ -1,6 +1,7 @@
 .contact-section {
   min-height: 100vh;
   min-width: 100%;
+  padding: 20px 10px;
 }
 .contact {
   display: flex;
@@ -23,7 +24,7 @@
 }
 .form-container {
   margin: 2px auto;
-  max-height: 450px;
+  max-height: 480px;
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px var(--text-color);
@@ -31,10 +32,10 @@
 }
 .contact-form {
   min-width: 350px;
-  max-width: 350px;
   padding: 0px 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .form-container h2 {
   text-align: center;
@@ -76,22 +77,22 @@
 
 .contact-form button {
   align-self: center;
-  width: 40%;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 12px 30px;
-  background-color: #7f38ec;
+  background-color: var(--btn-color);
   border: none;
   color: white;
   font-weight: bold;
   font-size: 16px;
   border-radius: 50px;
+  box-shadow: 0 0 10px var(--shadow);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #076879d0;
+  background-color: var(--btn-hover-color);
 }
 .contact-note {
   height: 200px;
@@ -107,8 +108,18 @@
 @media (max-width: 768px) {
   .contact {
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+  }
+  .form-container {
+    width: 90%;
+    max-height: 500px;
+    justify-content: center;
+  }
+  .contact-form {
+    min-height: 300px;
+    max-height: 420px;
+    min-width: 100px;
+    background-color: red;
   }
   .contact-section {
     padding: auto;
@@ -119,11 +130,5 @@
   }
   .contact-para {
     font-size: 1.15rem;
-  }
-  .form-container {
-    width: 80%;
-  }
-  .contact-form {
-    padding: 10px;
   }
 }

@@ -1,8 +1,9 @@
 .landing-container {
+  position: relative;
+  top: 20px;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -22,17 +23,17 @@
   max-width: 800px;
 }
 .name-head {
+  position: relative;
+  left: 60px;
   font-size: 1.75rem;
 }
 .profile-name {
+  margin-left: 90px;
   color: #007bff;
   font-weight: bold;
   font-size: 2.5rem;
   margin-top: 10px;
-  padding-left: 80px;
-  font-style: italic;
-  font-family: sans;
-  font-weight: bold;
+  font-family: serif;
 }
 .para-text {
   font-size: 1.75rem;
@@ -49,24 +50,21 @@
 .resume-btn {
   padding: 0.5rem 1.5rem;
   border: none;
-  background-color: transparent;
-  color: var(--button-text-color);
+  background-color: var(--btn-color);
+  color: whitesmoke;
   padding: 12px 30px;
   font-size: 16px;
   font-weight: 600;
   font-family: sans;
   border-radius: 20px;
-  box-shadow: 0 0 10px var(--navbar-color);
+  box-shadow: 0 0 10px var(--shadow);
   cursor: pointer;
 }
 .resume-btn:hover {
-  background-color: #7f38ec;
+  background-color:var(--btn-hover-color);
   color: #ffffff;
-  box-shadow: 0 0 15px #7f38ec;
+  box-shadow: 0 0 15px var(--shadow);
   transition: all 0.3s ease;
-}
-.resume-btn {
-  color: var(--button-text-color);
 }
 @media (max-width: 768px) {
   .landing-container {

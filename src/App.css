@@ -1,10 +1,12 @@
 :root {
-  --bg-color: #F7F7F7;
+  --bg-color: #f7f7f7;
   --text-color: #030b1c;
   --card-color: #f4f4f4;
   --icon-color: #1f2531;
-  --navbar-bg-color: #F7F7F7;
-  --navbar-color: #56dfcf;
+  --navbar-bg-color: #f7f7f7;
+  --btn-color: rgba(88, 88, 251, 0.788);
+  --btn-hover-color: #CDC1FF;
+  --shadow: #030b1c;
 }
 
 [data-theme="dark"] {
@@ -14,7 +16,9 @@
   --navbar-bg-color: #030b1c;
   --button-text-color: #f0f0f0;
   --icon-color: #f0f0f0;
-  --navbar-color: #56dfcf;
+  --btn-color: rgba(88, 88, 251, 0.788);
+  --shadow: #D0A2F7;
+  --btn-hover-color: #D0A2F7;
 }
 
 * {
