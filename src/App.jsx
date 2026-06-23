@@ -4,6 +4,7 @@ import Skills from "./components/Skills";
 import Project from "./components/Project";
 import Service from "./components/Service";
 import Contact from "./components/Contact";
+import './App.css'
 
 const App = () => {
   return (

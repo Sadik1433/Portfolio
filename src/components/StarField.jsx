@@ -94,9 +94,10 @@ const StarField = ({children}) => {
 
             const dx = mousePosition.x - centerX;
             const dy = mousePosition.y - centerY;
+
             const distance = Math.sqrt(dx * dx + dy * dy);
             const maxDistance = Math.sqrt(centerX * centerX + centerY * centerY);
-            const targetWarpSpeed = Math.min(1, distance / maxDistance) * 15;
+            const targetWarpSpeed = Math.min(1, distance / maxDistance) * 5;
 
             warpSpeedRef.current += (targetWarpSpeed - warpSpeedRef.current) * 0.05;
 
@@ -173,7 +174,7 @@ const StarField = ({children}) => {
     return (
         <div
             ref={wrapperRef}
-            className="relative w-full  flex items-center justify-center flex-col overflow-hidden"
+            className="relative h-full w-full  flex items-center justify-center flex-col"
         >
             
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full"/>

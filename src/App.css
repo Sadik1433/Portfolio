@@ -1,0 +1,41 @@
+:root {
+  --color-primary: #6366f1;
+  --color-secondary: #f43f5e;
+  --color-accent: #22d3ee;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #3b82f6;
+  --bg-color: #080812;
+  --card-color: rgba(15, 23, 42, 0.7);
+  --color-bg-sidebar: #111827;
+  --color-bg-input: rgba(30, 41, 59, 0.7);
+  --color-text-heading: #f1f5f9;
+  --color-text-body: #cbd5e1;
+  --color-text-muted: #64748b;
+  --color-text-highlight: #f43f5e;
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-brd: rgba(255, 255, 255, 0.18);
+}
+
+body {
+  background-color: var(--bg-color);
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+* {
+  scrollbar-width: none;
+}
+button:hover {
+  cursor: pointer;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}

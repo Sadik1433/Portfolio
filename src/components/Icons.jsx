@@ -36,7 +36,7 @@ const icons = [
 
 const Icons = () => {
   return (
-    <div className="flex items-center gap-10   flex-wrap md:gap-16 mt-8">
+    <div className="h-30 flex  justify-center  gap-5 flex-wrap md:gap-16 ">
       {icons.map((e) => {
         return (
           <div className="relative top-16 group">
@@ -45,7 +45,7 @@ const Icons = () => {
                 backgroundColor: e.bg,
                 color: e.color,
               }}
-              className="border-transparent p-2 rounded-[30px]"
+              className="border-transparent p-2 rounded-[30px] cursor-pointer"
             >
               {e.icons}
             </button>
@@ -55,7 +55,7 @@ const Icons = () => {
                   backgroundColor: e.bg,
                   color: e.color,
                 }}
-                className="min-w-[100px] text-[0.9rem]  rounded px-3 py-2"
+                className=" text-center min-w-[100px] text-[0.9rem] font-bold rounded-xl px-3 py-2"
               >
                 {e.name}
               </p>
