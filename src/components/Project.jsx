@@ -40,15 +40,15 @@ const projects = [
 const Project = () => {
   return (
     <section id="project">
-      <div className="relative py-3 md:h-screen text-white z-10 px-3">
-        <h1 className="text-lg text-center font-bold md:text-xl lg:3xl">
-          Projects
+      <div className="relative py-3 lg:h-screen z-10 px-3">
+        <h1 className="text-lg  font-bold md:text-xl lg:3xl text-[var(--color-primary)] underline">
+          Projects :-
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 ">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="p-4 bg-[var(--glass-bg)] shadow-[var(--color-text-muted)] rounded-lg shadow-md  cursor-pointer hover:shadow-lg transition-shadow duration-500 transition-transform duration-500 hover:scale-105"
+              className="p-4 bg-transparent shadow-lg shadow-cyan-500/50 inset-shadow-2xs  rounded-lg shadow-md  cursor-pointer hover:shadow-lg transition-shadow duration-500 transition-transform duration-500 hover:scale-105"
             >
               <h2 className="text-lg font-semibold text-[var(--color-primary)]">
                 {project.name}

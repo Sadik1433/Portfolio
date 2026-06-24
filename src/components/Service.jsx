@@ -31,16 +31,16 @@ const services = [
 const Service = () => {
   return (
     <section id="service">
-      <div className="relative h-screen text-white px-2">
-        <h1 className="text-5xl font-bold text-center">Services</h1>
+      <div className="relative  md:h-auto lg:h-screen px-4">
+        <h1 className="text-3xl font-bold   text-[var(--color-primary)] underline">Services</h1>
         <ul className="flex flex-col gap-8 text-1xl md:text-2xl mt-8">
           {services.map((s, i)=>{
             return(
-              <li key={i} className="flex flex-col gap-2">
-                <h1 className="text-3xl font-bold text-[var(--color-primary)]">
+              <li key={i} className="flex flex-col gap-2 text-[var(--color-text-body)]">
+                <h1 className="text-2xl font-bold text-[var(--color-info)]">
                   {i + 1}. {s.name} :-
                 </h1>
-                <p className="pl-8 ">{s.description}</p>
+                <p className="pl-8 text-xl">{s.description}</p>
               </li>
             )
           })}

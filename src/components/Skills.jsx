@@ -60,11 +60,11 @@ const skills = [
 ];
 const Skills = () => {
   return (
-    <section id="skill" className=" md:h-screen w-screen px-2 py-3">
+    <section id="skill" className="md:h-auto lg:h-screen w-screen px-2 py-4">
       <div className="relative  text-xl text-white flex flex-col gap-10 md:flex-row md:text-xl lg:text-2xl">
         <div className="md:flex-1">
-          <h1 className="text-2xl font-bold">About Me :-</h1>
-          <p className="mt-4 text-[16px] text-center leading-6 md:text-xl lg:text-2xl lg:leading-12">
+          <h1 className="text-2xl font-bold text-[var(--color-primary)] underline">About Me :-</h1>
+          <p className="mt-4 text-[16px] text-[var(--color-text-body)] text-center leading-6 md:text-xl lg:text-2xl lg:leading-12">
             I am passionate and self driven software developer with a strong
             interest in web develpoment and problem-solving. I have developed
             projects using modern technolgies such as <strong>HTML</strong>,
@@ -74,16 +74,16 @@ const Skills = () => {
           </p>
         </div>
         <div className="md:flex-1 py-4">
-          <h1 className="text-2xl font-bold">Education :-</h1>
+          <h1 className="text-2xl font-bold text-[var(--color-primary)] underline">Education :-</h1>
           {education.map((e, i) => {
             return (
-              <div key={i} className="mt-4 px-2">
-                <h1 className="text-xl font-bold text-[var(--color-text-highlight)]">
+              <div key={i} className="mt-4 px-2 " >
+                <h1 className="text-xl font-bold text-[var(--color-warning)]">
                   {e.class}
                 </h1>
-                <h3 className="text-md semi-bold text-[var(--color-primary)]">
+                <h4 className="text-lg text-[var(--color-primary)]">
                   {e.college}
-                </h3>
+                </h4>
                 <h6 className="text-sm text-[var(--color-text-muted)]">
                   {e.year}
                 </h6>
@@ -92,8 +92,8 @@ const Skills = () => {
           })}
         </div>
       </div>
-      <h1 className="text-2xl text-[var(--color-secondary)] pl-2">Skills :-</h1>
-      <ul className="px-2 py-2 relative md:top-10 lmd:text-xl lg:text-2xlg:top-20 grid grid-cols-3 gap-5 md:grid-cols-5 lg:grid-cols-8 ">
+      <h1 className="text-2xl text-[var(--color-primary)] pl-2 underline">Skills :-</h1>
+      <ul className="px-2 py-2 relative md:top-10 lmd:text-xl  lg:top-20 grid grid-cols-3 gap-5 md:grid-cols-5 lg:grid-cols-7 ">
         {skills.map((s, i) => {
           return (
             <ProgressBar key={i} name={s.name} value={s.value}/>

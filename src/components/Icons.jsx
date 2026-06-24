@@ -36,9 +36,9 @@ const icons = [
 const Icons = () => {
   return (
     <div className="h-30 flex  justify-center  gap-5 flex-wrap md:gap-16 ">
-      {icons.map((e) => {
+      {icons.map((e, i) => {
         return (
-          <div className="relative top-16 group">
+          <div className="relative top-5 md:top-15 group" key={i}>
             <button
               style={{
                 backgroundColor: e.bg,

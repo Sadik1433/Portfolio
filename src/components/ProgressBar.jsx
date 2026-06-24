@@ -3,7 +3,7 @@ const ProgressBar = ({name,value}) => {
 
     return (
         <div className="flex flex-col items-center gap-5">
-            <div className="relative w-[100px] h-[100px]">
+            <div className="relative w-[60px] h-[60px] md:w-[80px] h-[80px]">
                 <svg className="w-full h-full" viewBox="0 0 100 100">
                     <circle
                         cx="50"
@@ -51,11 +51,11 @@ const ProgressBar = ({name,value}) => {
                     />
                 </svg>
 
-                <p className="absolute top-[35px] right-[50px] translate-x-1/2 transform translate-y-1/2">{value}%</p>
+                <p className="absolute top-[18px] right-[30px] md:top-[20px] md:right-[40px] translate-x-1/2 transform translate-y-1/2">{value}%</p>
             </div>
 
             <button
-                    className={`bg-blue-500 w-full rounded-md  text-[0.8rem] px-2 py-1 mx-auto`}>{name}
+                    className={`bg-transparent border border-[var(--color-info)] w-full rounded-md font-bold  text-[0.8rem] px-2 py-1 mx-auto`}>{name}
             </button>
         </div>
     );
