@@ -8,32 +8,31 @@ const icons = [
     id: 1,
     icons: <FaInstagram size={35} />,
     name: "Instagram",
-    bg: "#e42f2f",
-    color:"#f0f0f0"
+    bg: "#E42F2F",
+    color: "#F0F0F0",
   },
   {
     id: 2,
     icons: <FaGithub size={35} />,
-    name: "Github",
-    bg: "#646462",
-    color: "#f0f0f0",
+    name: "GitHub",
+    bg: "#0b0b05",
+    color: "#F0F0F0",
   },
   {
     id: 3,
     icons: <FaWhatsapp size={35} />,
     name: "WhatsApp",
-    bg: "#077f37",
-    color: "#f0f0f0",
+    bg: "#077F37",
+    color: "#F0F0F0",
   },
   {
     id: 4,
     icons: <FaLinkedinIn size={35} />,
     name: "LinkedIn",
-    bg: "#4060f1",
-    color: "#f0f0f0",
+    bg: "#4060F1",
+    color: "#F0F0F0",
   },
 ];
-
 const Icons = () => {
   return (
     <div className="h-30 flex  justify-center  gap-5 flex-wrap md:gap-16 ">
@@ -45,7 +44,7 @@ const Icons = () => {
                 backgroundColor: e.bg,
                 color: e.color,
               }}
-              className="border-transparent p-2 rounded-[30px] cursor-pointer"
+              className="border-transparent p-2 rounded-[30px] cursor-pointer shadow-lg shadow-white/20 "
             >
               {e.icons}
             </button>
