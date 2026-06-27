@@ -41,14 +41,14 @@ const Project = () => {
   return (
     <section id="project">
       <div className="relative py-3 lg:h-screen z-10 px-3">
-        <h1 className="text-lg  font-bold md:text-xl lg:3xl text-[var(--color-primary)] underline">
+        <h1 className="text-2xl font-bold md:text-xl lg:text-3xl text-[var(--color-primary)] underline">
           Projects :-
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 ">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="p-4 bg-transparent shadow-lg shadow-cyan-500/50 inset-shadow-2xs  rounded-lg shadow-md  cursor-pointer hover:shadow-lg transition-shadow duration-500 transition-transform duration-500 hover:scale-105"
+              className="card-filter p-4 shadow-lg shadow-cyan-500/50   rounded-lg shadow-md  cursor-pointer hover:shadow-lg transition-shadow duration-500 transition-transform duration-500 hover:scale-105"
             >
               <h2 className="text-lg font-semibold text-[var(--color-primary)]">
                 {project.name}
@@ -72,14 +72,14 @@ const Project = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="btn btn-info btn-sm text-white">Demo</button>
+                  <button className="btn btn-info btn-sm text-white">
+                    Demo
+                  </button>
                 </a>
-                <a
-                  href={project.git}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="btn btn-success btn-sm text-white">GitHub</button>
+                <a href={project.git} target="_blank" rel="noopener noreferrer">
+                  <button className="btn btn-success btn-sm text-white">
+                    GitHub
+                  </button>
                 </a>
               </div>
             </div>

@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section id="contact" className="w-full px-2">
       <div className="px-2">
-        <h5 className="text-lg font-bold text-[var(--color-primary)]">Get In Touch</h5>
+        <h5 className="text-3xl font-bold text-[var(--color-primary)]">Get In Touch</h5>
         <p className="mt-4 text-lg leading-6 md:text-xl lg:text-2xl lg:leading-10">
           I am actively seeking internship and entry-level opportunities where I
           can apply my skills, learn from experienced professionals, and
@@ -20,7 +20,7 @@ const Contact = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[35px] boxShadow p-[30px]  rounded-xl">
         <aside className="w-full flex flex-col rounded-md">
           <div className="mb-10">
-            <h1 className="text-[2rem] font-[600] leading-[35px] text-[var(--color-info)]">
+            <h1 className="text-[1rem] font-[600] leading-[35px] text-[var(--color-info)]">
               Contact Information
             </h1>
           </div>

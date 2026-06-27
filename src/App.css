@@ -88,3 +88,10 @@ a {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE/Edge */
 }
+
+.name-text {
+  background: linear-gradient(10deg, #f1edee, #0d97c1, #0a0000);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: sans-serif;
+}
