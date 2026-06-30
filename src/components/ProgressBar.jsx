@@ -55,7 +55,7 @@ const ProgressBar = ({name,value}) => {
             </div>
 
             <button
-                    className={`bg-transparent border border-[var(--color-info)] w-full rounded-md font-bold  text-[0.8rem] px-2 py-1 mx-auto`}>{name}
+                    className={`bg-transparent border border-[var(--color-info)] w-full rounded-md font-bold  text-[0.8rem] px-2 py-1 mx-auto hover:bg-[var(--color-info)] hover:text-white`}>{name}
             </button>
         </div>
     );

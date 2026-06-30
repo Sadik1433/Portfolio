@@ -77,14 +77,15 @@ const Skills = () => {
           <h1 className="text-2xl font-bold text-[var(--color-primary)] underline">Education :-</h1>
           {education.map((e, i) => {
             return (
-              <div key={i} className="mt-4 px-2 " >
-                <h1 className="text-xl font-bold text-[var(--color-warning)]">
+              <div key={i} className="mt-4 px-3 py-2 border-l-4 border-[var(--color-primary)]  cursor-pointer rounded-r-lg  shadow-lg shadow-[var(--color-primary)] hover:shadow-lg transition-shadow duration-500 transition-transform duration-500 hover:scale-105"
+            >
+                <h1 className="text-xl font-bold text-[var(--color-danger)]">
                   {e.class}
                 </h1>
-                <h4 className="text-lg text-[var(--color-primary)]">
+                <h4 className="text-lg text-[var(--color-accent)] font-bold">
                   {e.college}
                 </h4>
-                <h6 className="text-sm text-[var(--color-text-muted)]">
+                <h6 className="text-sm text-[var(--color-text-muted)] font-bold">
                   {e.year}
                 </h6>
               </div>
