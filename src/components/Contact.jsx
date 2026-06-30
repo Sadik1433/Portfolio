@@ -7,8 +7,8 @@ import Footer from "./Footer";
 
 const Contact = () => {
   return (
-    <section id="contact" className="w-full px-2">
-      <div className="px-2">
+    <section id="contact" data-aos="fade-down" className="w-full px-2">
+      <div className="px-2" >
         <h5 className="text-3xl font-bold text-[var(--color-primary)]">Get In Touch</h5>
         <p className="mt-4 text-lg leading-6 md:text-xl lg:text-2xl lg:leading-10">
           I am actively seeking internship and entry-level opportunities where I
@@ -18,7 +18,7 @@ const Contact = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[35px] boxShadow p-[30px]  rounded-xl">
-        <aside className="w-full flex flex-col rounded-md">
+        <aside className="w-full flex flex-col rounded-md" data-aos="fade-right">
           <div className="mb-10">
             <h1 className="text-[1rem] font-[600] leading-[35px] text-[var(--color-info)]">
               Contact Information
@@ -57,7 +57,7 @@ const Contact = () => {
         </aside>
 
         {/* form area */}
-        <form>
+        <form data-aos="fade-in">
           <div className="flex flex-col sm:flex-row items-center gap-[30px]">
             <div className="flex flex-col gap-[5px] w-full sm:w-[50%]">
               <label className="text-[1rem] dark:text-[#abc2d3] text-gray-700">

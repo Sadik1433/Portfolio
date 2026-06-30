@@ -36,19 +36,31 @@ const projects = [
     languages: ["React", "TailwindCSS", "JavaScript"],
   },
 ];
+const animate = [
+  "fade-up",
+  "fade-down",
+  "fade-right",
+  "zoom-in",
+  "zoom-out",
+  "flip-left",
+  "flip-right",
+];
 
 const Project = () => {
   return (
     <section id="project">
-      <div className="relative py-3 lg:h-screen z-10 px-3">
+      <div className="relative py-4 lg:h-screen z-10 px-3">
         <h1 className="text-2xl font-bold md:text-xl lg:text-3xl text-[var(--color-primary)] underline">
           Projects :-
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 ">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <div
               key={project.id}
+              index={project.id}
               className="card-filter p-4 shadow-lg shadow-cyan-500/50   rounded-lg shadow-md  cursor-pointer hover:shadow-lg transition-shadow duration-500 transition-transform duration-500 hover:scale-105"
+              data-aos-duration="500"
+              data-aos={animate[index % animate.length]}
             >
               <h2 className="text-lg font-semibold text-center  text-[var(--color-primary)] shadow-sm shadow-cyan-500/50 px-2 py-1 rounded-lg">
                 {project.name}

@@ -10,14 +10,14 @@ const Hero = () => {
         className="z-10 px-4 py-2 md:px-5 lg:px-10 lg:h-screen"
       >
         <div className="flex h-full flex-col items-center  text-center md:flex-row   md:text-left ">
-          <div className="mt-8 flex space-x-4 order-0 md:space-x-0 md:order-1 lg:order-2">
+          <div className="mt-8 flex space-x-4 order-0 md:space-x-0 md:order-1 lg:order-2" data-aos={window.innerWidth < 768 ? "fade-up" : "fade-left"} data-aos-duration="1000">
             <img
               src={profile}
               alt="Hero Image"
-              className="w-40 md:w-50 object-contain  md:w-250"
+              className="w-40 md:w-50 object-contain  md:w-250"z
             />
           </div>
-          <div className="md:mt-18">
+          <div className="md:mt-18"  data-aos="fade-right" data-aos-duration="1000">
             <h1 className="text-2xl text-white font-bold text-left md:text-3xl lg:text-5xl">
               Hi, I'm <span className="text-blue-500 z-[-10] name-text">Sadik</span>
             </h1>

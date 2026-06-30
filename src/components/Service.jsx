@@ -28,15 +28,29 @@ const services = [
     description:"Connecting frontend applications with backend services through RESTful APIs."
   },
 ];
+
+const animate = [
+  "fade-up",
+  "fade-down",
+  "fade-left",
+  "fade-right",
+  "zoom-in",
+  "zoom-out",
+  "flip-left",
+  "flip-right",
+];
+
 const Service = () => {
   return (
     <section id="service">
-      <div className="relative  md:h-auto lg:h-screen px-4">
+      <div className="relative  md:h-auto  lg:h-screen px-4 py-5">
         <h1 className="text-3xl font-bold   text-[var(--color-primary)] underline">Services</h1>
         <ul className="flex flex-col gap-8 text-1xl md:text-2xl mt-8">
           {services.map((s, i)=>{
             return(
-              <li key={i} className="flex flex-col gap-2 text-[var(--color-text-body)]">
+              <li key={i} 
+              data-aos={animate[i % animate.length]} 
+               className="flex flex-col gap-2 text-[var(--color-text-body)]">
                 <h1 className="text-2xl font-bold text-[var(--color-info)]">
                   {i + 1}. {s.name} :-
                 </h1>

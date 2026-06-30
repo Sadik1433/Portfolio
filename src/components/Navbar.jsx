@@ -50,7 +50,6 @@ const ResponsiveNavbar = () => {
           onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}
         />
       </div>
-
       <aside
         className={` ${mobileSidebarOpen ? "translate-x-0 opacity-100 z-20" : "translate-x-[0px] opacity-0 z-[-1]"} md:hidden bg-white p-4 text-center absolute top-[65px] dark:bg-slate-700 right-0 w-full sm:w-[50%] rounded-md transition-all duration-300`}
       >
