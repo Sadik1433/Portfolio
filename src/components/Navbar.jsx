@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { CiMenuFries } from "react-icons/ci";
 import { FaMoon, FaSun } from "react-icons/fa";
+
 const sections = ["hero", "skill", "project", "service", "contact"];
 
 const ResponsiveNavbar = () => {
@@ -53,7 +54,7 @@ const ResponsiveNavbar = () => {
       <aside
         className={` ${mobileSidebarOpen ? "translate-x-0 opacity-100 z-20" : "translate-x-[0px] opacity-0 z-[-1]"} md:hidden bg-white p-4 text-center absolute top-[65px] dark:bg-slate-700 right-0 w-full sm:w-[50%] rounded-md transition-all duration-300`}
       >
-        <ul className="items-center gap-[20px] text-[1rem] text-white flex flex-col">
+        <ul className="items-center gap-[20px] text-[1rem] text-[var(--color-text-body)] flex flex-col">
           {sections.map((e, i) => {
             return (
               <ScrollLink
@@ -70,8 +71,15 @@ const ResponsiveNavbar = () => {
                   {e}
                 </li>
               </ScrollLink>
+              
             );
           })}
+          <button
+          onClick={toggleTheme}
+          className="toggle-theme text-[var(--heading-colr)]"
+        >
+          {theme === "light" ? <FaMoon size={25} /> : <FaSun size={25} />}
+        </button>
         </ul>
       </aside>
     </nav>

@@ -33,6 +33,7 @@ const icons = [
     color: "#F0F0F0",
   },
 ];
+
 const Icons = () => {
   return (
     <div className="h-30 flex  justify-center  gap-5 flex-wrap md:gap-16 ">
@@ -44,7 +45,7 @@ const Icons = () => {
                 backgroundColor: e.bg,
                 color: e.color,
               }}
-              className="border-transparent p-2 rounded-[30px] cursor-pointer shadow-lg shadow-white/20 "
+              className="border-transparent p-2 rounded-[30px] cursor-pointer shadow-[0px_0px_8px_var(--shadow)]"
             >
               {e.icons}
             </button>

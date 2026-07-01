@@ -9,8 +9,36 @@ const StarField = ({children}) => {
     const warpSpeedRef = useRef(0);
     const animationRef = useRef(null);
 
+    const [theme, setTheme] = useState(() => document.documentElement.getAttribute("data-theme") || "dark");
+    const [isMobile, setIsMobile] = useState(() => typeof window !== "undefined" ? window.innerWidth < 768 : false);
+
     useEffect(() => {
+        const observer = new MutationObserver(() => {
+            setTheme(document.documentElement.getAttribute("data-theme") || "dark");
+        });
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ["data-theme"],
+        });
+
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            observer.disconnect();
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
+    const showStarField = theme === "dark" && !isMobile;
+    const showClipPath = theme === "light";
+
+    useEffect(() => {
+        if (!showStarField) return;
         const canvas = canvasRef.current;
+        if (!canvas) return;
         const ctx = canvas.getContext("2d");
 
         const handleResize = () => {
@@ -61,9 +89,10 @@ const StarField = ({children}) => {
                 cancelAnimationFrame(animationRef.current);
             }
         };
-    }, []);
+    }, [showStarField]);
 
     useEffect(() => {
+        if (!showStarField) return;
         const handleMouseMove = (e) => {
             if (!wrapperRef.current) return;
 
@@ -76,12 +105,13 @@ const StarField = ({children}) => {
 
         window.addEventListener("mousemove", handleMouseMove);
         return () => window.removeEventListener("mousemove", handleMouseMove);
-    }, []);
+    }, [showStarField]);
 
     useEffect(() => {
-        if (!dimensions.width || !dimensions.height) return;
+        if (!showStarField || !dimensions.width || !dimensions.height) return;
 
         const canvas = canvasRef.current;
+        if (!canvas) return;
         const ctx = canvas.getContext("2d");
 
         const animate = () => {
@@ -150,8 +180,6 @@ const StarField = ({children}) => {
                     centerY,
                     100 * warpSpeedRef.current
                 );
-                // gradient.addColorStop(0, "rgba(100, 200, 255)");
-                // gradient.addColorStop(1, "rgba(100, 200, 255, 0)");
 
                 ctx.fillStyle = gradient;
                 ctx.beginPath();
@@ -169,16 +197,17 @@ const StarField = ({children}) => {
                 cancelAnimationFrame(animationRef.current);
             }
         };
-    }, [dimensions, mousePosition]);
+    }, [dimensions, mousePosition, showStarField]);
 
     return (
         <div
             ref={wrapperRef}
             className="relative h-full w-full  flex items-center justify-center flex-col"
         >
-            
-            <canvas ref={canvasRef} className="absolute inset-0 w-full h-full"/>
-
+            {showStarField && (
+                <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+            )}
+            {showClipPath && <div className="curve-divider" />}
             {children}
         </div>
     );

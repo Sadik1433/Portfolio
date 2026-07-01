@@ -55,7 +55,7 @@ const Project = () => {
             <div
               key={project.id}
               index={project.id}
-              className="min-h-[250px] px-4 py-4  rounded-lg shadow-[0px_0px_1px_var(--shadow)]  cursor-pointer  hover:shadow-[0px_0px_5px_var(--shadow)]  transition-shadow duration-500 transition-transform duration-500 hover:scale-102"
+              className="min-h-[250px] px-4 py-4  rounded-lg shadow-[0px_0px_10px_var(--shadow)]  cursor-pointer  hover:shadow-[0px_0px_5px_var(--shadow)]  transition-shadow duration-500 transition-transform duration-500 hover:scale-102"
               data-aos={animate[index % animate.length]}
             >
               <h2 className="text-lg font-semibold text-center  text-[var(--color-primary)] shadow-[0px_0px_2px_var(--shadow)]  px-2 py-1 rounded-lg">
@@ -68,7 +68,7 @@ const Project = () => {
                 {project.languages.map((language, index) => (
                   <span
                     key={index}
-                    className="text-center text-[var(--color-accent)] bg-transparent shadow-[0px_0px_1px_var(--shadow)] semi-bold px-3 py-2 rounded-lg text-sm  hover:bg-[var(--shadow)]  hover:text-white hover:shadow-lg transition-shadow duration-500 transition-transform duration-500 hover:scale-105 "
+                    className="text-center text-[var(--color-accent)] shadow-[0px_0px_2px_var(--shadow)] bg-transparent shadow-[0px_0px_1px_var(--shadow)] semi-bold px-3 py-2 rounded-lg text-sm  hover:bg-[var(--shadow)]  hover:text-white hover:shadow-lg transition-shadow duration-500 transition-transform duration-500 hover:scale-105 "
                   >
                     {language}
                   </span>
@@ -80,12 +80,12 @@ const Project = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="px-[50px] py-2 rounded-lg shadow-[0px_0px_1px_var(--shadow)] hover:bg-[var(--color-info)] hover:text-white hover:shadow-lg transition-shadow duration-500 transition-transform duration-500 hover:scale-105 ">
+                  <button className="px-[50px] py-2 rounded-lg shadow-[0px_0px_2px_var(--shadow)] hover:bg-[var(--color-info)] hover:text-white hover:shadow-lg transition-shadow duration-500 transition-transform duration-500 hover:scale-105 ">
                     Demo
                   </button>
                 </a>
                 <a href={project.git} target="_blank" rel="noopener noreferrer">
-                  <button className="px-[50px] py-2 rounded-lg  shadow-[0px_0px_1px_var(--shadow)]  hover:bg-[var(--color-success)] hover:text-white">
+                  <button className="px-[50px] py-2 rounded-lg  shadow-[0px_0px_2px_var(--shadow)]  hover:bg-[var(--color-success)] hover:text-white">
                     GitHub
                   </button>
                 </a>
