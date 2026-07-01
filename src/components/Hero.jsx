@@ -14,11 +14,11 @@ const Hero = () => {
             <img
               src={profile}
               alt="Hero Image"
-              className="w-40 md:w-50 object-contain  md:w-250"z
+              className="w-40 md:w-50 object-contain  md:w-250"
             />
           </div>
-          <div className="md:mt-18"  data-aos="fade-right" data-aos-duration="1000">
-            <h1 className="text-2xl text-white font-bold text-left md:text-3xl lg:text-5xl">
+          <div className="md:mt-18"  data-aos="fade-right">
+            <h1 className="text-2xl text-white font-bold text-left md:text-3xl lg:text-5xl ">
               Hi, I'm <span className="text-blue-500 z-[-10] name-text">Sadik</span>
             </h1>
             <p className="mt-2 text-white text-lg leading-6 md:text-xl md:mt-4  lg:text-2xl lg:leading-12">

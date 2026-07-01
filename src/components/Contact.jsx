@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section id="contact" data-aos="fade-down" className="w-full px-2">
       <div className="px-2" >
-        <h5 className="text-3xl font-bold text-[var(--color-primary)]">Get In Touch</h5>
+        <h5 className="text-3xl font-bold text-[var(--color-primary)] [text-shadow:2px_1px_1px_var(--shadow)]">Get In Touch</h5>
         <p className="mt-4 text-lg leading-6 md:text-xl lg:text-2xl lg:leading-10">
           I am actively seeking internship and entry-level opportunities where I
           can apply my skills, learn from experienced professionals, and
@@ -56,7 +56,6 @@ const Contact = () => {
           </div>
         </aside>
 
-        {/* form area */}
         <form data-aos="fade-in">
           <div className="flex flex-col sm:flex-row items-center gap-[30px]">
             <div className="flex flex-col gap-[5px] w-full sm:w-[50%]">

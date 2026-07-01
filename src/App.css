@@ -1,26 +1,17 @@
 :root {
   --color-primary: #362FD9;
-  --color-secondary: #e11d48;
-  --color-accent: #5478FF;
-  --color-success: #059669;
-  --color-warning: #d97706;
-  --color-danger: #AA77FF;
   --color-info: #386ee4;
   --shadow: rgba(33, 27, 27, 0.18);
   --bg-color: #E8F9FF;
-  --card-color: rgba(255, 255, 255, 0.9);
-  --color-bg-sidebar: #ffffff;
-  --color-bg-input: rgba(226, 232, 240, 0.7);
-  --color-text-heading: #0f172a;
   --color-text-body: #0F2167;
-  --color-text-muted: #3b82f6;
   --color-text-highlight: #e11d48;
   --glass-bg: rgba(255, 255, 255, 0.6);
   --glass-brd: rgba(148, 163, 184, 0.2);
- 
+
 }
 
 [data-theme="dark"] {
+   --color-primary: #6366f1;
    --color-primary: #6366f1;
   --color-secondary: #f43f5e;
   --color-accent: #AFDDFF;
@@ -30,7 +21,7 @@
   --color-info: #3b82f6;
   --bg-color: #080812;
   --card-color: rgba(15, 23, 42, 0.7);
-  --shadow:#f0f0f0;
+  --shadow:cyan;
   --color-text-body: #cbd5e1;
   --color-text-muted: #BFC9D1;;
   --color-text-highlight: #f43f5e;
@@ -99,4 +90,11 @@ a {
   font-size: 22px;
   font-weight: bold;
   color:  var(--color-text-body);
+}
+strong{
+  color: var(--color-primary);
+  font-family: sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  text-shadow: none;
 }
