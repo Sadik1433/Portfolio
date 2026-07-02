@@ -13,9 +13,10 @@ const StarField = ({children}) => {
     const [isMobile, setIsMobile] = useState(() => typeof window !== "undefined" ? window.innerWidth < 768 : false);
 
     useEffect(() => {
-        const observer = new MutationObserver(() => {
+        const observer = new MutationObserver(() => { //browser APIs . It watches the DOM for changes.
             setTheme(document.documentElement.getAttribute("data-theme") || "dark");
         });
+        
         observer.observe(document.documentElement, {
             attributes: true,
             attributeFilter: ["data-theme"],

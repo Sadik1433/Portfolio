@@ -18,8 +18,8 @@ const ResponsiveNavbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 bg-[var(--bg-color)] md:px-[0px] py-[18px] z-1000 border-b-1">
-      <ul className="gap-20 text-[1rem]  md:flex hidden md:justify-end px-4">
+    <nav className="sticky top-0 left-0 w-full bg-[var(--bg-color)] py-[18px] z-[1000] shadow-[0px_0px_10px_var(--shadow)]">
+      <ul className="gap-20 text-[1rem] md:flex hidden md:justify-end px-4">
         {sections.map((e, i) => {
           return (
             <ScrollLink
@@ -71,7 +71,6 @@ const ResponsiveNavbar = () => {
                   {e}
                 </li>
               </ScrollLink>
-              
             );
           })}
           <button

@@ -7,7 +7,7 @@ const Hero = () => {
     <StarField>
       <section
         id="hero"
-        className="z-10 px-4 py-2 md:px-5 lg:px-10 lg:h-screen"
+        className=" z-10 px-4 py-2 md:px-5 lg:px-10 lg:h-screen"
       >
         <div className="flex h-full flex-col items-center  text-center md:flex-row   md:text-left ">
           <div
@@ -21,12 +21,12 @@ const Hero = () => {
               className="w-40 md:w-50 object-contain  md:w-250"
             />
           </div>
-          <div className="md:mt-18" data-aos="fade-right">
+          <div className="md:mt-18" data-aos="fade-right" data-aos-duration="1000">
             <h1 className="text-2xl text-[var(--color-text-body)] font-bold text-left md:text-3xl lg:text-5xl ">
               Hi, I'm{" "}
-              <span className="text-blue-500 z-[-10] name-text">Sadik</span>
+              <span className="z-[-10] name-text">Sadik</span>
             </h1>
-            <p className="mt-2 text-[var(--color-text-body)] text-lg leading-6 md:text-xl md:mt-4  lg:text-2xl lg:leading-12">
+            <p className="mt-2 text-[var(--color-text-body)] text-lg leading-6 md:text-xl md:mt-4  lg:text-2xl lg:leading-12" >
               I am motivated and enthusiastic about web development, constantly
               seeking to learn and grow in this ever-evolving field. I am
               passionate about creating innovative and user-friendly web
