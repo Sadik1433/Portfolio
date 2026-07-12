@@ -14,7 +14,7 @@ import { useEffect } from "react";
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, //   Animation duration (ms)
+      duration: 500, //   Animation duration (ms)
       once: false, // Animate only once
       offset: 100, // Start animation 100px before element enters viewport
       easing: "ease-in-out",

@@ -1,122 +1,227 @@
-import { MdOutlineCall, MdOutlineEmail } from "react-icons/md";
-import { IoLocationOutline } from "react-icons/io5";
-import { CgFacebook } from "react-icons/cg";
-import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { useState } from 'react';
+import {
+  FiMail,
+  FiPhone,
+  FiMapPin,
+  FiSend,
+  FiFacebook,
+  FiTwitter,
+  FiInstagram,
+  FiLinkedin
+} from 'react-icons/fi';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Thank you ${formData.firstName}! Your message has been sent successfully.`);
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      message: ''
+    });
+  };
+
   return (
-    <section id="contact" data-aos="fade-in" className="w-full md:h-screen py-2">
-      <div className="px-2">
-        <h5 className="text-3xl font-bold text-[var(--color-primary)] [text-shadow:2px_1px_1px_var(--shadow)]">
-          Get In Touch
-        </h5>
-        <p className="mt-4 text-lg px-2 leading-6 md:text-xl lg:text-2xl lg:leading-10">
-          I am actively seeking internship and entry-level opportunities where I
-          can apply my skills, learn from experienced professionals, and
-          contribute to meaningful projects. Feel free to reach out for
-          collaborations, project discussions, or career opportunities.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[35px] boxShadow p-[30px]  rounded-xl">
+    <section id="contact" className="w-full py-10 px-4 md:px-6 lg:px-12 flex items-center justify-center">
+      <div className="w-full  grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8 items-start">
+
+        {/* Left Sidebar Card */}
         <aside
-          className="w-full flex flex-col rounded-md"
+          className="w-full bg-[var(--color-card-bg)] border border-[var(--color-card-border)] rounded-2xl p-6 flex flex-col gap-6 shadow-2xl shadow-[var(--color-card-shadow)]"
           data-aos="fade-right"
+          data-aos-duration="800"
         >
-          <div className="flex flex-col gap-[20px] text-xl   lg:2xl">
-            <p className="flex items-center gap-[8px]">
-              <MdOutlineCall />
-              +8801305282768
-            </p>
-            <p className="flex items-center break-all gap-[8px]">
-              <MdOutlineEmail />
-              zenuilibrary@gmail.com
-            </p>
-            <p className="flex items-center gap-[8px]">
-              <IoLocationOutline />
-              Kulaura, Moulvibazar, Sylhet
+          {/* Header */}
+          <div className="flex flex-col gap-1">
+            <h1 className="text-[var(--color-text-body)] text-3xl font-extrabold flex items-center gap-3">
+              <FiMail className="text-[var(--color-primary)]" />
+              Contact
+            </h1>
+            <p className="text-[var(--color-text-muted)] text-sm leading-relaxed mt-2 font-normal">
+              I am actively seeking internship and entry-level opportunities where I can apply my skills, learn from experienced professionals, and contribute to meaningful projects.
             </p>
           </div>
 
-          <div className="flex gap-[35px] flex-wrap text-black mt-8">
-            <a className="md:text-[30px] p-3 self-center cursor-pointer rounded-full shadow-[0px_0px_10px_var(--shadow)] text-[var(--color-text-body)] hover:bg-transparent hover:text-[var(--shadow)] transition-all duration-300  boxShadow">
-              <CgFacebook />
-            </a>
-            <a className="md:text-[30px] p-3 self-center cursor-pointer rounded-full shadow-[0px_0px_10px_var(--shadow)] text-[var(--color-text-body)] hover:bg-transparent hover:text-[var(--shadow)] transition-all duration-300  boxShadow">
-              <BsTwitter />
-            </a>
-            <a className="md:text-[30px]  self-center p-3 cursor-pointer rounded-full  shadow-[0px_0px_10px_var(--shadow)] text-[var(--color-text-body)] hover:bg-transparent hover:text-[var(--shadow)] transition-all duration-300  boxShadow">
-              <BsInstagram />
-            </a>
-            <a className="md:text-[30px] self-center p-3 cursor-pointer rounded-full shadow-[0px_0px_10px_var(--shadow)] text-[var(--color-text-body)] hover:bg-transparent hover:text-[var(--shadow)] transition-all duration-300  boxShadow"> 
-              <BsLinkedin />
-            </a>
+          <div className="border-t border-[var(--color-card-border)]"></div>
+
+          {/* Contact Details Card */}
+          <div className="flex flex-col gap-4 text-xs text-[var(--color-text-muted)] font-normal">
+            <div className="flex items-center gap-3 p-3 bg-[var(--color-link-bg)] border border-[var(--color-card-border)] rounded-xl">
+              <FiPhone className="text-lg text-[var(--color-primary)] shrink-0" />
+              <div className="flex flex-col">
+                <span className="text-[9px] uppercase font-bold text-[var(--color-text-muted)]">Call Me</span>
+                <span className="font-semibold text-[var(--color-text-body)]">+8801305282768</span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 p-3 bg-[var(--color-link-bg)] border border-[var(--color-card-border)] rounded-xl">
+              <FiMail className="text-lg text-[var(--color-primary)] shrink-0" />
+              <div className="flex flex-col min-w-0">
+                <span className="text-[9px] uppercase font-bold text-[var(--color-text-muted)]">Email</span>
+                <span className="font-semibold text-[var(--color-text-body)] truncate">zenuilibrary@gmail.com</span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 p-3 bg-[var(--color-link-bg)] border border-[var(--color-card-border)] rounded-xl">
+              <FiMapPin className="text-lg text-[var(--color-primary)] shrink-0" />
+              <div className="flex flex-col">
+                <span className="text-[9px] uppercase font-bold text-[var(--color-text-muted)]">Location</span>
+                <span className="font-semibold text-[var(--color-text-body)]">Kulaura, Moulvibazar, Sylhet</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-[var(--color-card-border)]"></div>
+
+          {/* Socials Connection */}
+          <div>
+            <h3 className="text-[var(--color-text-body)] font-semibold text-xs mb-3 uppercase tracking-wider">
+              Social Channels
+            </h3>
+            <div className="flex items-center gap-3">
+              <a
+                href="#"
+                className="p-2.5 bg-[var(--color-link-bg)] border border-[var(--color-card-border)] rounded-xl hover:bg-[var(--color-primary)] hover:text-white hover:border-[var(--color-primary)] text-[var(--color-text-body)] transition-all duration-300"
+              >
+                <FiFacebook className="text-lg" />
+              </a>
+              <a
+                href="#"
+                className="p-2.5 bg-[var(--color-link-bg)] border border-[var(--color-card-border)] rounded-xl hover:bg-[var(--color-primary)] hover:text-white hover:border-[var(--color-primary)] text-[var(--color-text-body)] transition-all duration-300"
+              >
+                <FiTwitter className="text-lg" />
+              </a>
+              <a
+                href="#"
+                className="p-2.5 bg-[var(--color-link-bg)] border border-[var(--color-card-border)] rounded-xl hover:bg-[var(--color-primary)] hover:text-white hover:border-[var(--color-primary)] text-[var(--color-text-body)] transition-all duration-300"
+              >
+                <FiInstagram className="text-lg" />
+              </a>
+              <a
+                href="#"
+                className="p-2.5 bg-[var(--color-link-bg)] border border-[var(--color-card-border)] rounded-xl hover:bg-[var(--color-primary)] hover:text-white hover:border-[var(--color-primary)] text-[var(--color-text-body)] transition-all duration-300"
+              >
+                <FiLinkedin className="text-lg" />
+              </a>
+            </div>
           </div>
         </aside>
 
-        <form data-aos="fade-in">
-          <div className="flex flex-col sm:flex-row items-center gap-[30px]">
-            <div className="flex flex-col gap-[5px] w-full sm:w-[50%]">
-              <label className="text-[1rem] text-[var(--color-text-body)]">
-                First Name
-              </label>
-              <input
-                type="text"
-                className="peer  border-b-1 shadow-[0px_2px_2px_var(--shadow)] border-b outline-none focus:border-[#3B9DF8] w-full transition-colors duration-300"
-              />
+        {/* Right Section - Contact Form Card */}
+        <main
+          className="w-full flex flex-col gap-6"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+
+          <div className="bg-[var(--color-card-bg)] border border-[var(--color-card-border)] rounded-2xl p-6 sm:p-8 shadow-xl shadow-[var(--color-card-shadow)]">
+            <div className="flex flex-col gap-1 mb-5">
+              <h1 className="text-[var(--color-text-body)] text-3xl font-extrabold flex items-center gap-3">
+                <FiMail className="text-[var(--color-primary)]" />
+                Get In Touch
+              </h1>
+              <p className="text-[var(--color-text-muted)] text-sm font-medium">Feel free to reach out for collaborations, project discussions, or career opportunities.</p>
             </div>
 
-            <div className="flex flex-col gap-[5px] w-full sm:w-[50%]">
-              <label className="text-[1rem]  text-[var(--color-text-body)]">
-                Last Name
-              </label>
-              <input
-                type="text"
-                className="peer  border-b-1 shadow-[0px_2px_2px_var(--shadow)] border-b outline-none focus:border-[#3B9DF8] w-full transition-colors duration-300"
-              />
-            </div>
-          </div>
+            <div className="border-t border-[var(--color-card-border)]"></div>
 
-          <div className="flex flex-col sm:flex-row items-center gap-[30px] mt-10">
-            <div className="flex flex-col gap-[5px] w-full sm:w-[50%]">
-              <label className="text-[1rem] text-[var(--color-text-body)]">
-                Email Address
-              </label>
-              <input
-                type="email"
-                className="peer  border-b-1 shadow-[0px_2px_2px_var(--shadow)] border-b outline-none focus:border-[#3B9DF8] w-full transition-colors duration-300"
-              />
-            </div>
+            <form onSubmit={handleSubmit} className="flex flex-col gap-6 pt-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-body)]">First Name</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
+                    placeholder="First Name"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[var(--color-link-bg)]/40 border border-[var(--color-card-border)] text-sm text-[var(--color-text-body)] placeholder-[var(--color-text-muted)]/50 focus:outline-none focus:border-[var(--color-primary)]/50 transition-colors"
+                  />
+                </div>
 
-            <div className="flex flex-col gap-[5px] w-full sm:w-[50%]">
-              <label className="text-[1rem] text-[var(--color-text-body)]">
-                Phone Number
-              </label>
-              <input
-                type="number"
-                className="peer  border-b-1 shadow-[0px_2px_2px_var(--shadow)] border-b outline-none focus:border-[#3B9DF8] w-full transition-colors duration-300"
-              />
-            </div>
-          </div>
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-body)]">Last Name</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                    placeholder="Last Name"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[var(--color-link-bg)]/40 border border-[var(--color-card-border)] text-sm text-[var(--color-text-body)] placeholder-[var(--color-text-muted)]/50 focus:outline-none focus:border-[var(--color-primary)]/50 transition-colors"
+                  />
+                </div>
+              </div>
 
-          <div className="flex flex-col gap-[5px] w-full mt-10">
-            <label className="text-[1rem] text-[var(--color-text-body)]">
-              Write Message
-            </label>
-            <textarea
-              className="peer  shadow-[0px_2px_2px_var(--shadow)] border-b resize-none outline-none w-full text-[var(--color-text-body)]  transition-colors focus:border-[#3B9DF8] duration-300"
-              rows="5"
-            ></textarea>
-          </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-body)]">Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    placeholder="email@example.com"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[var(--color-link-bg)]/40 border border-[var(--color-card-border)] text-sm text-[var(--color-text-body)] placeholder-[var(--color-text-muted)]/50 focus:outline-none focus:border-[var(--color-primary)]/50 transition-colors"
+                  />
+                </div>
 
-          <div className="w-full flex items-center sm:items-end justify-center sm:justify-end mt-5">
-            <button
-              type="submit"
-              className="px-[50px] py-2 rounded-lg shadow-[0px_0px_2px_var(--shadow)] hover:bg-[var(--color-info)] hover:text-white hover:shadow-lg transition-shadow duration-500 transition-transform duration-500 hover:scale-105 "
-            >
-              Send Message
-            </button>
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-body)]">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="Phone Number"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[var(--color-link-bg)]/40 border border-[var(--color-card-border)] text-sm text-[var(--color-text-body)] placeholder-[var(--color-text-muted)]/50 focus:outline-none focus:border-[var(--color-primary)]/50 transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-body)]">Write Message</label>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  placeholder="Tell me about your project or opportunity..."
+                  rows="5"
+                  className="w-full px-4 py-2.5 rounded-xl bg-[var(--color-link-bg)]/40 border border-[var(--color-card-border)] text-sm text-[var(--color-text-body)] placeholder-[var(--color-text-muted)]/50 focus:outline-none focus:border-[var(--color-primary)]/50 transition-colors resize-none"
+                ></textarea>
+              </div>
+
+              <div className="flex justify-end mt-2">
+                <button
+                  type="submit"
+                  className="flex items-center gap-2.5 px-8 py-3 rounded-xl border border-[var(--color-card-border)] bg-[var(--color-link-bg)] text-[var(--color-primary)] font-bold hover:bg-[var(--color-primary)] hover:text-white hover:border-[var(--color-primary)] transition-all duration-300 shadow-md hover:shadow-lg hover:scale-[1.03]"
+                >
+                  <FiSend className="text-base" />
+                  Send Message
+                </button>
+              </div>
+
+            </form>
           </div>
-        </form>
+        </main>
+
       </div>
     </section>
   );
