@@ -4,11 +4,11 @@ import {
   FiPhone,
   FiMapPin,
   FiSend,
-  FiFacebook,
-  FiTwitter,
   FiInstagram,
   FiLinkedin
 } from 'react-icons/fi';
+
+import { FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -63,7 +63,7 @@ const Contact = () => {
               <FiPhone className="text-lg text-[var(--color-primary)] shrink-0" />
               <div className="flex flex-col">
                 <span className="text-[9px] uppercase font-bold text-[var(--color-text-muted)]">Call Me</span>
-                <span className="font-semibold text-[var(--color-text-body)]">+8801305282768</span>
+                <span className="font-semibold text-[var(--color-text-body)]">7799023364</span>
               </div>
             </div>
 
@@ -71,7 +71,11 @@ const Contact = () => {
               <FiMail className="text-lg text-[var(--color-primary)] shrink-0" />
               <div className="flex flex-col min-w-0">
                 <span className="text-[9px] uppercase font-bold text-[var(--color-text-muted)]">Email</span>
-                <span className="font-semibold text-[var(--color-text-body)] truncate">zenuilibrary@gmail.com</span>
+                <span className="font-semibold text-[var(--color-text-body)] truncate">
+                  <a href="mailto:sadikshaik7866@gmail.com" target="_blank" rel="noopener noreferrer">
+                    sadikshaik7866@gmail.com
+                  </a>
+                </span>
               </div>
             </div>
 
@@ -91,30 +95,24 @@ const Contact = () => {
             <h3 className="text-[var(--color-text-body)] font-semibold text-xs mb-3 uppercase tracking-wider">
               Social Channels
             </h3>
-            <div className="flex items-center gap-3">
+            <div className="flex  justify-evenly gap-3">
               <a
-                href="#"
+                href="https://github.com/sadik1433"
                 className="p-2.5 bg-[var(--color-link-bg)] border border-[var(--color-card-border)] rounded-xl hover:bg-[var(--color-primary)] hover:text-white hover:border-[var(--color-primary)] text-[var(--color-text-body)] transition-all duration-300"
               >
-                <FiFacebook className="text-lg" />
+                <FaGithub className="text-xl" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/"
                 className="p-2.5 bg-[var(--color-link-bg)] border border-[var(--color-card-border)] rounded-xl hover:bg-[var(--color-primary)] hover:text-white hover:border-[var(--color-primary)] text-[var(--color-text-body)] transition-all duration-300"
               >
-                <FiTwitter className="text-lg" />
+                <FiInstagram className="text-xl" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/sadik1433"
                 className="p-2.5 bg-[var(--color-link-bg)] border border-[var(--color-card-border)] rounded-xl hover:bg-[var(--color-primary)] hover:text-white hover:border-[var(--color-primary)] text-[var(--color-text-body)] transition-all duration-300"
               >
-                <FiInstagram className="text-lg" />
-              </a>
-              <a
-                href="#"
-                className="p-2.5 bg-[var(--color-link-bg)] border border-[var(--color-card-border)] rounded-xl hover:bg-[var(--color-primary)] hover:text-white hover:border-[var(--color-primary)] text-[var(--color-text-body)] transition-all duration-300"
-              >
-                <FiLinkedin className="text-lg" />
+                <FiLinkedin className="text-xl" />
               </a>
             </div>
           </div>
