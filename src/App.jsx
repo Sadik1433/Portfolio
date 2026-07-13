@@ -12,14 +12,17 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const App = () => {
+
   useEffect(() => {
     AOS.init({
       duration: 500, //   Animation duration (ms)
       once: false, // Animate only once
       offset: 100, // Start animation 100px before element enters viewport
       easing: "ease-in-out",
+      disable: "phone", // Disable animations on mobile devices
     });
   }, []);
+
   return (
     <>
       <Navbar />

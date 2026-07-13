@@ -87,7 +87,7 @@ const Service = () => {
         {/* Left Sidebar Card */}
         <aside
           className="w-full bg-[var(--color-card-bg)] border border-[var(--color-card-border)] rounded-2xl p-6 flex flex-col gap-6 shadow-2xl shadow-[var(--color-card-shadow)]"
-          data-aos="fade-left"
+          data-aos="fade-right"
           data-aos-duration="800"
         >
           {/* Header */}

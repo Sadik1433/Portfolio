@@ -98,7 +98,7 @@ const Project = () => {
       <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8 items-start">
         <aside
           className="w-full bg-[var(--color-card-bg)] border border-[var(--color-card-border)] rounded-2xl p-6 flex flex-col gap-6 shadow-2xl shadow-[var(--color-card-shadow)]"
-          data-aos="fade-left"
+          data-aos="fade-right"
           data-aos-duration="800"
         >
           <div className="flex flex-col gap-1 mb-2">

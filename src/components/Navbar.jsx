@@ -47,14 +47,14 @@ const ResponsiveNavbar = () => {
 
       <div className="w-full flex justify-end px-4 gap-[10px]">
         <CiMenuFries
-          className="text-[1.8rem] dark:text-[#abc2d3] mr-1 text-[#424242] cursor-pointer md:hidden flex"
+          className="text-[1.8rem]  mr-1 text-[#424242] cursor-pointer md:hidden flex"
           onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}
         />
       </div>
       <aside
-        className={` ${mobileSidebarOpen ? "translate-y-0 opacity-100 z-20 pointer-events-auto" : "translate-y-[-10px] opacity-0 z-[-1] pointer-events-none"} md:hidden bg-white p-4 text-center absolute top-[65px] dark:bg-slate-700 right-0 w-full sm:w-[50%] rounded-md transition-all duration-300`}
+        className={` ${mobileSidebarOpen ? "translate-y-0 opacity-100 z-20 pointer-events-auto" : "translate-y-[-10px] opacity-0 z-[-1] pointer-events-none"} md:hidden p-4 text-center absolute top-[65px]  right-0 w-full sm:w-[50%] rounded-md transition-all duration-300`}
       >
-        <ul className="items-center gap-[20px] text-[1rem] text-[var(--color-text-body)] flex flex-col">
+        <ul className="items-center gap-[20px] text-[1rem] text-[var(--color-text-body)] flex flex-col ">
           {sections.map((e, i) => {
             return (
               <ScrollLink

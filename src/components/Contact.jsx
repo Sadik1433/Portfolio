@@ -45,7 +45,6 @@ const Contact = () => {
           data-aos="fade-right"
           data-aos-duration="800"
         >
-          {/* Header */}
           <div className="flex flex-col gap-1">
             <h1 className="text-[var(--color-text-body)] text-3xl font-extrabold flex items-center gap-3">
               <FiMail className="text-[var(--color-primary)]" />

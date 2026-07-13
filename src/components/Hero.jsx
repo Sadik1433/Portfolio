@@ -12,8 +12,8 @@ const Hero = () => {
         <div className="flex h-full flex-col items-center  text-center md:flex-row   md:text-left ">
           <div
             className="mt-8 flex space-x-4 order-0 md:space-x-0 md:order-1 lg:order-2"
-            data-aos={window.innerWidth < 768 ? "fade-up" : "fade-left"}
-            data-aos-duration="1000"
+            data-aos="fade-left"
+            data-aos-duration="800"
           >
             <img
               src={profile}

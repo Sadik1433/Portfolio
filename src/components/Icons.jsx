@@ -44,8 +44,9 @@ const Icons = () => {
               style={{
                 backgroundColor: e.bg,
                 color: e.color,
+                boxShadow: `0px 0px 12px ${e.name === "GitHub" ? "var(--color-primary)" : e.bg}`,
               }}
-              className="border-transparent p-2 rounded-[30px] cursor-pointer shadow-[0px_0px_8px_var(--shadow)]"
+              className="border-transparent p-2 rounded-[30px] cursor-pointer transition-all duration-300 hover:scale-110"
             >
               {e.icons}
             </button>
