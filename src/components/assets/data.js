@@ -8,7 +8,7 @@ export const projects = [
     description:
       "A modern and responsive portfolio website built using React and Tailwind CSS. It includes dark/light mode, smooth animations, project showcase and a working contact form.",
     git: "https://github.com/Sadik1433/Portfolio",
-    link: "https://sadik-portfolio.vercel.app",
+    link: "https://sadikportfolio.netlify.app/",
     languages: ["React", "JavaScript", "Tailwind CSS", "EmailJS", "AOS", "Framer Motion"],
     features: [
       "Responsive Design",
@@ -27,8 +27,8 @@ export const projects = [
     status: "pending",
     description:
       "A comprehensive student management portal designed for tracking student records, managing course enrollments, recording grades, and monitoring attendance.",
-    git: "https://github.com/Sadik1433/Todo-Web-App",
-    link: "https://sadik-todo.vercel.app",
+    git: "https://github.com/Sadik1433/StudentManagement",
+    link: "Pending Status",
     languages: ["React", "JavaScript", "CSS3", "Local Storage"],
     features: [
       "Student Record Management",
@@ -41,13 +41,13 @@ export const projects = [
   {
     id: 3,
     name: "Jobby App",
-    categoryIcon: "globe",
+    categoryIcon: "graduation-cap",
     badge: "React",
     status: "completed",
     description:
       "A comprehensive job search portal layout displaying filtered jobs, company reviews, salaries, locations, and interactive search routing.",
-    git: "https://github.com/Sadik1433/Jobby-App",
-    link: "https://sadik-jobby.vercel.app",
+      git:"https://github.com/Sadik1433/JobbyApp",
+      link:"https://job1433.ccbp.tech/",
     languages: ["React", "Tailwind CSS", "JavaScript", "REST API", "React Router"],
     features: [
       "Search & Category Filters",
@@ -61,10 +61,10 @@ export const projects = [
     name: "Shopee",
     categoryIcon: "shopping-cart",
     badge: "JavaScript API",
-    status: "completed",
+    status: "pending",
     description:
       "A modern e-commerce shopping platform featuring dynamic product listings, search filters, an interactive shopping cart, and a simulated checkout flow.",
-    git: "https://github.com/Sadik1433/Weather-App",
+    git: "https://github.com/Sadik1433/shopee",
     link: "https://sadik-weather.vercel.app",
     languages: ["JavaScript", "HTML5", "CSS3", "OpenWeather API", "Tailwind CSS"],
     features: [
@@ -80,12 +80,12 @@ export const projects = [
     name: "Tic-Tac-toe",
     categoryIcon: "game",
     badge: "React",
-    status: "pending",
+    status: "completed",
     description:
       "A classic Tic-Tac-Toe game built with React featuring interactive animations, local two-player mode, turn indicators, and score history tracking.",
-    git: "https://github.com/Sadik1433/Expense-Tracker",
-    link: "https://sadik-expense.vercel.app",
-    languages: ["React", "CSS3", "Local Storage API", "ChartJS"],
+    git: "https://github.com/Sadik1433/tictactoe",
+    link: "https://tic-tac1433.netlify.app/",
+    languages: ["Html", "CSS", "JavaScript", "Local Storage API"],
     features: [
       "Local Pass-and-Play Multiplayer",
       "Dynamic Turn & Score Indicators",
@@ -98,12 +98,12 @@ export const projects = [
     id: 6,
     name: "Emoji Game",
     categoryIcon: "game",
-    badge: "React API",
+    badge: "React",
     status: "completed",
     description:
       "An exciting React-based memory card game where players click unique emojis that shuffle on every click, testing memory limits with dynamic score tracking.",
-    git: "https://github.com/Sadik1433/Movie-Search-App",
-    link: "https://sadik-movies.vercel.app",
+    git: "https://github.com/Sadik1433/EmojiGame",
+    link: "https://emoji1433.ccbp.tech/",
     languages: ["React", "Tailwind CSS", "TMDB API", "JavaScript"],
     features: [
       "Randomized Card Shuffling",
@@ -115,14 +115,14 @@ export const projects = [
   },
   {
     id: 7,
-    name: "Trendz",
-    categoryIcon: "shopping-cart",
-    badge: "React",
+    name: "Todo",
+    categoryIcon: "tasks",
+    badge: "HTML",
     status: "completed",
     description:
       "A client-side digital showcase showing e-commerce catalog pages, smooth filter actions, custom interactive cart menus, and mock checkout steps.",
-    git: "https://github.com/Sadik1433/E-Commerce-UI",
-    link: "https://sadik-shopui.vercel.app",
+    git: "https://github.com/Sadik1433/todolist",
+    link: "https://dailytask-123.netlify.app/",
     languages: ["React", "Tailwind CSS", "Context API", "CSS3"],
     features: [
       "Interactive Shop Catalog",
@@ -131,15 +131,6 @@ export const projects = [
       "Product Category Badges"
     ]
   }
-];
-
-export const animate = [
-  "fade-up",
-  "fade-down",
-  "zoom-in",
-  "zoom-out",
-  "flip-left",
-  "flip-right",
 ];
 
 export const services = [
@@ -246,25 +237,32 @@ export const services = [
 
 export const education = [
   {
-    id: 1,
-    head: "Degree",
-    class: "Bachelor of Commerce (B.Com) – Computer Applications",
-    college: "SIES College of Commerce and Economics, Mumbai",
-    year: "2019-2022",
+     id: 1,
+    head: "Professional Training",
+    class: "Java Full Stack Development (Pursuing)",
+    college: "NxtWave Institute",
+    year: "2024 - Present",
   },
   {
     id: 2,
-    head: "Intermediate",
-    class: "Intermediate (Commerce)",
-    college: "SIES College of Science, Mumbai",
-    year: "2017-2019",
+    head: "Degree",
+    class: "Bachelor of Commerce (B.Com) – Computer Applications",
+    college: "Shri Gnanambica Degree College, Madanapalli",
+    year: "2021-2023",
   },
   {
     id: 3,
+    head: "Intermediate",
+    class: "Intermediate (Commerce)",
+    college: "Sri Siddartha Junior College, Madanapalli",
+    year: "2018-2020",
+  },
+  {
+    id: 4,
     head: "School",
     class: "Secondary Education (10th Grade)",
     college: "Hpoe Muncipal High School",
-    year: "2016-2018",
+    year: "2017-2018",
   },
 ];
 

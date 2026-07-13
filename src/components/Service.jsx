@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { services } from './data.js';
+import { services } from './assets/data.js';
 import {
   FiBriefcase,
   FiCheckCircle,

@@ -1,62 +1,294 @@
+import { useRef } from 'react';
+import portfolio from './assets/portflolio.png';
+import student from './assets/Student.png';
+import jobby from './assets/jobby.png';
+import shopee from './assets/Shopee.png';
+import emoji from './assets/emoji.png';
+import todo from './assets/todo.png';
+import tic from './assets/tic.png';
 
-const ProjectImage = ({ projectId }) => {
+
+const ProjectImage = ({ projectId, images }) => {
+    const imageModal = useRef(null);
+
     switch (projectId) {
-        case 1: 
+        case 1:
             return (
-                <div className="relative aspect-[4/3] w-full bg-[#070814] rounded-xl border border-[#1a1b38] overflow-hidden flex flex-col justify-between p-3 shadow-inner select-none">
-                   
-                    <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-purple-600/10 rounded-full blur-xl pointer-events-none"></div>
-                    <div className="absolute bottom-2 right-2 w-16 h-16 bg-blue-600/15 rounded-full blur-lg pointer-events-none"></div>
-                    <img src=" " alt='portfolio' />
+                <div className="px-2 flex flex-col">
+                    <img
+                        src={portfolio}
+                        alt="Portfolio"
+                        className="w-[300px] h-auto cursor-pointer rounded-lg shadow-lg"
+                        onClick={() => imageModal.current.showModal()}
+                    />
+
+                    <dialog
+                        ref={imageModal}
+                        className="backdrop:bg-black/70 bg-transparent p-0 border-0 rounded-lg"
+                    >
+                        <div className="fixed inset-0 flex items-center justify-center">
+                            <div className="relative">
+                                <button
+                                    onClick={() => imageModal.current.close()}
+                                    className="absolute -top-10 right-0 bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600"
+                                >
+                                    ✕
+                                </button>
+                                <img
+                                    src={portfolio}
+                                    alt="Portfolio"
+                                    className="max-w-[80vw] max-h-[80vh] rounded-lg shadow-2xl"
+                                />
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <button
+                        onClick={() => imageModal.current.showModal()}
+                        className="mt-4 py-1 bg-transparent border-1 shadow-lg text-white rounded-lg hover:bg-blue-700"
+                    >
+                        View
+                    </button>
                 </div>
             );
 
-        case 2: 
+        case 2:
             return (
-                <div className="relative aspect-[4/3] w-full bg-[#090a16] rounded-xl border border-[#1a1b38] overflow-hidden flex flex-col p-3 shadow-inner select-none">
+                <div className="px-2 flex flex-col">
+                    <img
+                        src={student}
+                        alt="Student"
+                        className="w-[300px] h-auto cursor-pointer rounded-lg shadow-lg"
+                        onClick={() => imageModal.current.showModal()}
+                    />
 
+                    <dialog
+                        ref={imageModal}
+                        className="backdrop:bg-black/70 bg-transparent p-0 border-0 rounded-lg"
+                    >
+                        <div className="fixed inset-0 flex items-center justify-center">
+                            <div className="relative">
+                                <button
+                                    onClick={() => imageModal.current.close()}
+                                    className="absolute -top-10 right-0 bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600"
+                                >
+                                    ✕
+                                </button>
+                                <img
+                                    src={student}
+                                    alt="Student"
+                                    className="max-w-[80vw] max-h-[80vh] rounded-lg shadow-2xl"
+                                />
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <button
+                        onClick={() => imageModal.current.showModal()}
+                        className="mt-4 py-1 bg-transparent border-1 shadow-lg text-white rounded-lg hover:bg-blue-700"
+                    >
+                        View
+                    </button>
                 </div>
             );
 
-        case 3: 
+        case 3:
             return (
-                <div className="relative aspect-[4/3] w-full bg-[#080916] rounded-xl border border-[#1a1b38] overflow-hidden flex flex-col justify-between p-3 shadow-inner select-none">
-                   
+                 <div className="px-2 flex flex-col">
+                    <img
+                        src={jobby}
+                        alt="jobby"
+                        className="w-[300px] h-auto cursor-pointer rounded-lg shadow-lg"
+                        onClick={() => imageModal.current.showModal()}
+                    />
+
+                    <dialog
+                        ref={imageModal}
+                        className="backdrop:bg-black/70 bg-transparent p-0 border-0 rounded-lg"
+                    >
+                        <div className="fixed inset-0 flex items-center justify-center">
+                            <div className="relative">
+                                <button
+                                    onClick={() => imageModal.current.close()}
+                                    className="absolute -top-10 right-0 bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600"
+                                >
+                                    ✕
+                                </button>
+                                <img
+                                    src={jobby}
+                                    alt="jobby"
+                                    className="max-w-[80vw] max-h-[80vh] rounded-lg shadow-2xl"
+                                />
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <button
+                        onClick={() => imageModal.current.showModal()}
+                        className="mt-4 py-1 bg-transparent border-1 shadow-lg text-white rounded-lg hover:bg-blue-700"
+                    >
+                        View
+                    </button>
                 </div>
             );
 
         case 4:
             return (
-                <div className="relative aspect-[4/3] w-full bg-[#0a0f26] rounded-xl border border-[#1b2247] overflow-hidden flex flex-col justify-between p-3 shadow-inner select-none bg-gradient-to-b from-[#0b0c24] to-[#12173f]">
-                  
+                 <div className="px-2 flex flex-col">
+                    <img
+                        src={shopee}
+                        alt="Shopee"
+                        className="w-[300px] h-auto cursor-pointer rounded-lg shadow-lg"
+                        onClick={() => imageModal.current.showModal()}
+                    />
+
+                    <dialog
+                        ref={imageModal}
+                        className="backdrop:bg-black/70 bg-transparent p-0 border-0 rounded-lg"
+                    >
+                        <div className="fixed inset-0 flex items-center justify-center">
+                            <div className="relative">
+                                <button
+                                    onClick={() => imageModal.current.close()}
+                                    className="absolute -top-10 right-0 bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600"
+                                >
+                                    ✕
+                                </button>
+                                <img
+                                    src={shopee}
+                                    alt="Shopee"
+                                    className="max-w-[80vw] max-h-[80vh] rounded-lg shadow-2xl"
+                                />
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <button
+                        onClick={() => imageModal.current.showModal()}
+                        className="mt-4 py-1 bg-transparent border-1 shadow-lg text-white rounded-lg hover:bg-blue-700"
+                    >
+                        View
+                    </button>
                 </div>
             );
 
         case 5:
             return (
-                <div className="relative aspect-[4/3] w-full bg-[#070814] rounded-xl border border-[#1a1b38] overflow-hidden flex flex-col justify-between p-3 shadow-inner select-none">
-                   
+                 <div className="px-2 flex flex-col">
+                    <img
+                        src={tic}
+                        alt="tic-tac-toe"
+                        className="w-[300px] h-auto cursor-pointer rounded-lg shadow-lg"
+                        onClick={() => imageModal.current.showModal()}
+                    />
+
+                    <dialog
+                        ref={imageModal}
+                        className="backdrop:bg-black/70 bg-transparent p-0 border-0 rounded-lg"
+                    >
+                        <div className="fixed inset-0 flex items-center justify-center">
+                            <div className="relative">
+                                <button
+                                    onClick={() => imageModal.current.close()}
+                                    className="absolute -top-10 right-0 bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600"
+                                >
+                                    ✕
+                                </button>
+                                <img
+                                    src={tic}
+                                    alt="tic-tac-toe"
+                                    className="max-w-[80vw] max-h-[80vh] rounded-lg shadow-2xl"
+                                />
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <button
+                        onClick={() => imageModal.current.showModal()}
+                        className="mt-4 py-1 bg-transparent border-1 shadow-lg text-white rounded-lg hover:bg-blue-700"
+                    >
+                        View
+                    </button>
                 </div>
             );
 
         case 6:
             return (
-                <div className="relative aspect-[4/3] w-full bg-[#080812] rounded-xl border border-[#181935] overflow-hidden flex flex-col p-3 shadow-inner select-none">
-                   
+                 <div className="px-2 flex flex-col">
+                    <img
+                        src={emoji}
+                        alt="Emoji Game"
+                        className="w-[300px] h-auto cursor-pointer rounded-lg shadow-lg"
+                        onClick={() => imageModal.current.showModal()}
+                    />
+
+                    <dialog
+                        ref={imageModal}
+                        className="backdrop:bg-black/70 bg-transparent p-0 border-0 rounded-lg"
+                    >
+                        <div className="fixed inset-0 flex items-center justify-center">
+                            <div className="relative">
+                                <button
+                                    onClick={() => imageModal.current.close()}
+                                    className="absolute -top-10 right-0 bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600"
+                                >
+                                    ✕
+                                </button>
+                                <img
+                                    src={emoji}
+                                    alt="Emoji Game"
+                                    className="max-w-[80vw] max-h-[80vh] rounded-lg shadow-2xl"
+                                />
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <button
+                        onClick={() => imageModal.current.showModal()}
+                        className="mt-4 py-1 bg-transparent border-1 shadow-lg text-white rounded-lg hover:bg-blue-700"
+                    >
+                        View
+                    </button>
                 </div>
             );
 
         case 7:
             return (
-                <div className="relative aspect-[4/3] w-full bg-[#080916] rounded-xl border border-[#191a38] overflow-hidden flex flex-col justify-between p-3 shadow-inner select-none">
-                  
-                </div>
-            );
+                 <div className="px-2 flex flex-col">
+                    <img
+                        src={todo}
+                        alt="todo-list"
+                        className="w-[300px] h-auto cursor-pointer rounded-lg shadow-lg"
+                        onClick={() => imageModal.current.showModal()}
+                    />
 
-        case 8: 
-            return (
-                <div className="relative aspect-[4/3] w-full bg-[#070814] rounded-xl border border-[#1a1b38] overflow-hidden flex flex-col p-3 shadow-inner select-none">
-       
+                    <dialog
+                        ref={imageModal}
+                        className="backdrop:bg-black/70 bg-transparent p-0 border-0 rounded-lg"
+                    >
+                        <div className="fixed inset-0 flex items-center justify-center">
+                            <div className="relative">
+                                <button
+                                    onClick={() => imageModal.current.close()}
+                                    className="absolute -top-10 right-0 bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600"
+                                >
+                                    ✕
+                                </button>
+                                <img
+                                    src={todo}
+                                    alt="todo-list"
+                                    className="max-w-[80vw] max-h-[80vh] rounded-lg shadow-2xl"
+                                />
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <button
+                        onClick={() => imageModal.current.showModal()}
+                        className="mt-4 py-1 bg-transparent border-1 shadow-lg text-white rounded-lg hover:bg-blue-700"
+                    >
+                        View
+                    </button>
                 </div>
             );
 
@@ -65,4 +297,4 @@ const ProjectImage = ({ projectId }) => {
     }
 };
 
-export default ProjectImage
+export default ProjectImage;

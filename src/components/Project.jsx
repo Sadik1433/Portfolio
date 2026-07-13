@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { projects } from './data.js';
+import { projects } from './assets/data.js'
 import ProjectImage from './ProjectImage.jsx';
 
 import {
@@ -95,7 +95,7 @@ const Project = () => {
 
   return (
     <section id="project" className="w-full min-h-screen py-10 px-4 md:px-6 lg:px-12 flex items-center justify-center">
-      <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8 items-start">
+      <div className="w-full  grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8 items-start">
         <aside
           className="w-full bg-[var(--color-card-bg)] border border-[var(--color-card-border)] rounded-2xl p-6 flex flex-col gap-6 shadow-2xl shadow-[var(--color-card-shadow)]"
           data-aos="fade-right"
@@ -259,8 +259,8 @@ const Project = () => {
                     <div className="p-6 grid grid-cols-1 md:grid-cols-[1.2fr_1.8fr] gap-6 items-start">
 
                       <div className="w-full flex flex-col gap-2">
-                        <ProjectImage projectId={project.id} />
-                      </div>
+                        <ProjectImage projectId={project.id} images={project.images} />
+                      </div>  
 
                       <div className="flex flex-col gap-6">
                         <div>

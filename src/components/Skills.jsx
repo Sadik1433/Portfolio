@@ -1,6 +1,6 @@
 import ProgressBar from "./ProgressBar";
-import { education } from "./data.js";
-import { skills } from "./data.js";
+import { education } from "./assets/data.js";
+import { skills } from "./assets/data.js";
 
 const Skills = () => {
   return (
