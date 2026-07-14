@@ -78,10 +78,13 @@ a {
   -ms-user-select: none;
 }
 
+
 .name-text {
-  background: linear-gradient(10deg, #f1edee, #0d97c1, #0a0000);
+  background: linear-gradient(150deg, #f1edee, #0d97c1);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-text-fill-color: transparent;
   font-family: sans-serif;
 }
 
@@ -165,8 +168,7 @@ strong {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--shadow);
-  border-radius: 5px;
+  border-radius: 50px;
   border: 20px solid var(--bg-color);
 }
 
@@ -176,7 +178,7 @@ strong {
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: var(--shadow) var(--bg-color);
+  scrollbar-color: var(--color-primary) var(--bg-color);
 }
 
 .pulse-green {
