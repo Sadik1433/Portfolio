@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="text-[var(--color-text-body)] bg-[var(--color-bg)] py-4 px-3">
       <div className="container mx-auto text-center">
-        <p className="text-[var(--color-text-highlight)] font-bold mt-2"> 
+        <p className="text-[var(--color-info)] font-bold mt-2"> 
           Designed & Developed with ❤️ by Sadik 🚀
             </p>
             <p className="text-[1rem]">
