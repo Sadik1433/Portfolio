@@ -19,7 +19,8 @@ const ResponsiveNavbar = () => {
 
   return (
     <nav className="sticky top-0 left-0 w-full bg-[var(--bg-color)] py-[18px] z-[1000] shadow-[0px_0px_10px_var(--color-primary)]">
-      <ul className="gap-20 text-[1rem] md:flex hidden md:justify-end px-4">
+      <ul className="gap-20 text-[1rem] md:flex hidden md:justify-center px-4">
+      <h1 className="text-[var(--text-color)] name-text text-2xl text-bold ">Sadik</h1>
         {sections.map((e, i) => {
           return (
             <ScrollLink

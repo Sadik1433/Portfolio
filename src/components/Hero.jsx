@@ -1,8 +1,13 @@
 import Icons from "./Icons";
 import StarField from "./StarField";
 import profile from "./assets/profile.png";
+import { useState, useRef } from "react";
+import ResumeModal from "./ResumeModal";
 
 const Hero = () => {
+  const [resumeOpen, setResumeOpen] = useState(false);
+  const resumeTriggerRef = useRef(null);
+
   return (
     <StarField>
       <section
@@ -33,15 +38,19 @@ const Hero = () => {
               applications that make a positive impact on people's lives.
             </p>
             <Icons />
-            <div className="flex justify-center  mt-[0px]  md:mt-[50px] ">
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                <button className="btn btn-lg btn-outline rounded-full btn-primary">
-                  Resume
-                </button>
-              </a>
+            <div className="flex justify-center  mt-[0px]  md:mt-[50px]">
+              <button ref={resumeTriggerRef} onClick={() => setResumeOpen(true)} className="px-4 py-2 rounded-full shadow shadow-indigo-600 hover:text-white hover:translate-y-1
+               hover:bg-gradient-to-b from-pink-400 to-indigo-600">
+                Resume
+              </button>
             </div>
           </div>
         </div>
+        <ResumeModal
+          open={resumeOpen}
+          setOpen={setResumeOpen}
+          triggerRef={resumeTriggerRef}
+        />
       </section>
     </StarField>
   );

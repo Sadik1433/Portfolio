@@ -210,7 +210,7 @@ const Project = () => {
                   {/* Accordion Trigger/Header */}
                   <button
                     onClick={() => handleAccordionToggle(project.id)}
-                    className="w-full py-4 px-6 flex items-center justify-between text-left cursor-pointer hover:bg-[var(--color-link-bg)]/40 transition-colors border-none outline-none focus:outline-none"
+                    className="w-full py-4 px-6 flex items-center justify-between text-left cursor-pointer hover:bg-[var(--color-link-bg)]/80 hover:translate-y-1 transition-colors border-none outline-none focus:outline-none"
                   >
                     <div className="flex items-center gap-4">
                       {isExpanded ? (

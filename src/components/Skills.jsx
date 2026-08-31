@@ -20,15 +20,18 @@ const Skills = () => {
             </h2>
             <div className="border-t border-[var(--color-card-border)]"></div>
 
-            <p className="text-[var(--color-text-muted)] text-lg leading-6 md:text-base md:leading-7 font-normal">
+            <p className="text-[var(--color-text-muted)] text-[20px] md:leading-10">
               I am passionate and self-driven software developer with a strong
               interest in web development and problem-solving. I have developed
-              projects using modern technologies such as{" "}
+              projects using modern technologies such as
+
               {skills.map((s, i) => (
-                <strong key={i} className="text-[var(--color-primary)] font-semibold">
+                <strong key={i} className="text-[var(--color-primary)] text-[20px] ">
                   {s.name}{i < skills.length - 1 ? ", " : "."}
+                  {i === 2 ? <br></br> : ""}
                 </strong>
               ))}
+
             </p>
           </div>
 
@@ -46,7 +49,7 @@ const Skills = () => {
               {education.map((e, i) => (
                 <details
                   key={i}
-                  className="px-4 py-3 border-l-4 border-[var(--color-primary)] bg-[var(--color-link-bg)] border border-[var(--color-card-border)] cursor-pointer rounded-xl hover:shadow-md hover:shadow-[var(--color-card-shadow)] transition-all duration-300 group"
+                  className="px-4 py-3 border-l-4 border-[var(--color-primary)] bg-[var(--color-link-bg)] border border-[var(--color-card-border)] cursor-pointer rounded-xl hover:shadow-md hover:shadow-[var(--color-card-shadow)] transition-all duration-300 group hover:translate-y-1.5"
                 >
                   <summary className="text-base font-bold text-[var(--color-primary)] list-none flex items-center justify-between">
                     {e.head}

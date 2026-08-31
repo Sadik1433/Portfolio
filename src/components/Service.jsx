@@ -110,7 +110,7 @@ const Service = () => {
             </h3>
             <ul className="flex flex-col gap-3 text-[var(--color-text-muted)] text-xs font-normal">
               {services.map((service, idx) => (
-                <li key={service.id} className="flex items-center justify-between hover:text-[var(--color-text-body)] transition-colors">
+                <li key={service.id} className="flex items-center justify-between hover:text-[var(--color-text-body)]  hover:translate-y-1  transition-colors">
                   <div className="flex items-center gap-2.5">
                     <span className={`w-2 h-2 rounded-full ${getDotColor(idx)}`}></span>
                     <span>{service.name}</span>

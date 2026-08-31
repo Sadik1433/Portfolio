@@ -45,7 +45,6 @@
 }
 body {
   background:  var(--bg-color);
-  /* background-attachment: fixed; */
   color: var(--color-text-body);
   overflow: hidden;
   overflow-x: hidden;
